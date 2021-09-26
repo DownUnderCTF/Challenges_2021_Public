@@ -34,7 +34,7 @@ For this check, sending anything that will pass the `t1 == 0` check will be usef
 
 ## Check 2
 
-For this check, we need to find "good" `x` and `y` such that `x + y == r` and also `(x * y) & 0xffff` has many factors of `2`. Recall that unsigned integers are in the range `[0, 2^32)`, and anything that goes above "overflows" back to `0` (i.e. `2^32` becomes `0`, and `2^32 + 1` becomes `1`). Since our inputs need to be both less than `r`, abusing this overflow is the only way we can make their sum be equal to `r`. If `r = 31482` for example, a good choice for `x` and `y` would be `x = r + 2^14` and `y = 2^32 - 2^14`. Then, `x + y = (r + 2^14) + (2^32 - 2^14) = r + 2^32 = r`, so it passes the initial check. Furthermore, `x * y = (r + 2^14) * (2^32 - 2^14) = 2^32 * r - 2^14 * r + 2^46 - 2^28` when the `& 0xffff` operation is performed, we are left with `2**15` which is perfect.
+For this check, we need to find "good" `x` and `y` such that `x + y == r` and also `(x * y) & 0xffff` has many factors of `2`. Recall that unsigned integers are in the range `[0, 2^32)`, and anything that goes above "overflows" back to `0` (i.e. `2^32` becomes `0`, and `2^32 + 1` becomes `1`). Since our inputs need to both be more than `r`, abusing this overflow is the only way we can make their sum be equal to `r`. If `r = 31482` for example, a good choice for `x` and `y` would be `x = r + 2^14` and `y = 2^32 - 2^14`. Then, `x + y = (r + 2^14) + (2^32 - 2^14) = r + 2^32 = r`, so it passes the initial check. Furthermore, `x * y = (r + 2^14) * (2^32 - 2^14) = 2^32 * r - 2^14 * r + 2^46 - 2^28` when the `& 0xffff` operation is performed, we are left with `2**15` which is perfect.
 
 ## Check 3
 
