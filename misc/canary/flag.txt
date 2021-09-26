@@ -1,0 +1,1 @@
+DUCTF{chirp_charp_chorp_churp}

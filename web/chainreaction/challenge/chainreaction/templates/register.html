@@ -1,0 +1,28 @@
+{% extends 'head.html' %}
+{% block body %}
+<div class="container">
+    <div class="jumbotron text-center">
+      <h1>Registration</h1>
+    </div>
+    <form method="POST" action="/register">
+        <div class="form-group">
+            <label for="username" class="col-sm-10 col-form-label">Username (Cannot contain <, > characters for security reasons)</label>
+            <div class="col-sm-10">
+              <input type="text" name="username" class="form-control" id="username" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" name="password" class="form-control" id="password" required>
+            </div>
+            <br>
+            <div class="form-group">
+              <div class="col-md-10">
+                <button type="submit" class="btn btn-primary" id="submit">Register</button>
+              </div>
+          </div>    
+        </form>
+</div>
+
+{% endblock body %}

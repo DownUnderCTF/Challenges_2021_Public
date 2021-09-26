@@ -1,0 +1,1 @@
+DUCTF{stringent_strings_string}

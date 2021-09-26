@@ -1,0 +1,22 @@
+{% extends "_pretty.html" %}
+{% block header %}
+<h1>Notepad</h1>
+{% endblock %}
+{% block content %}
+<section style="margin-bottom: 2.5em;">
+    <div class="is-center">
+        <img src="https://source.unsplash.com/ycTvvg1mPU4/640x480" style="max-width: 75%;">
+    </div>
+    <p>A free online notepad. Might be helpful for taking notes whilst you hack!</p>
+    <p>Now with full markdown support!</p>
+    <p style="display: flex; justify-content: space-around;">
+        <a href="/login" class="button primary">Login</a>
+        <a href="/register" class="button">Register</a>
+    </p>
+</section>
+{% endblock %}
+{% block footer %}
+<small>
+Image By <a href="https://unsplash.com/@jessbaileydesigns">Jess Bailey</a> on <a href="https://unsplash.com/">Unspash</a>
+</small>
+{% endblock %}

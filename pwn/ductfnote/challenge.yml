@@ -1,0 +1,21 @@
+version: "0.1"
+id: ductfnote
+name: DUCTFnote
+category: pwn
+description: |
+  You only get OneNote
+
+  Author: grub
+
+connection_info: nc ${host} ${port}
+
+files:
+  - ./challenge/ductfnote
+  - ./challenge/ductfnote.c
+  - ./challenge/libc-2.31.so
+
+tags:
+  - hard
+
+flags:
+  - DUCTF{n0w_you_4r3_r34dy_f0r_r34l_m$_0d4y}

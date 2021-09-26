@@ -1,0 +1,23 @@
+version: "0.1"
+id: heart-of-the-nation
+name: Heart of the nation
+category: OSINT
+description: |
+  We found some files on the website (not really), the caption was “Right at the heart of the nation, no piece of the bush inside the circle remains untouched by us".
+
+  We believe this is one of their meeting places, can you help us find the location of the photo to three decimal places?
+
+  Flag format is DUCTF{lat,lon}
+ 
+  Author: xXl33t_h@x0rXx
+tags:
+  - medium
+
+files:
+  - ./challenge/image.jpg
+
+flags:
+  - DUCTF{-35.306,149.120}
+  - DUCTF{-35.306, 149.120}
+  - DUCTF{149.120,-35.306}
+  - DUCTF{149.120, -35.306}

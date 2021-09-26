@@ -1,0 +1,7 @@
+version: '3'
+services:
+  treasure: # challenge name
+    build: .
+    ports:
+      - "1337:1337" # local:container
+    privileged: true

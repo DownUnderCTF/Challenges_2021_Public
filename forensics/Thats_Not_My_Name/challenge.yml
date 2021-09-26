@@ -1,0 +1,17 @@
+version: "0.1"
+id: thats-not-my-name
+name: That's Not My Name
+category: forensics
+description: |
+  I think some of my data has been stolen, can you help me? 
+
+  Author: Conletz#5420
+
+tags:
+  - easy
+
+files:
+  - ./challenge/notmyname.pcapng.7z
+
+flags:
+  - DUCTF{c4t_g07_y0ur_n4m3}

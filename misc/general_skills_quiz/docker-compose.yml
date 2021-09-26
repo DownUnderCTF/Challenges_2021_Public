@@ -1,0 +1,7 @@
+version: "2"
+services:
+  general_skills_quiz:
+    build: .
+    privileged: true
+    ports:
+      - "1337:1337"

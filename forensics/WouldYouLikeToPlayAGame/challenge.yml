@@ -1,0 +1,28 @@
+version: "0.1"
+id: want-to-play-a-game
+name: Want to Play a Game?
+category: forensics
+description: |
+  My PC has been infected! I need help finding out what happened. I managed to get a memory dump, not sure if that can help you?
+
+  In order to recover from this infection, I need the following information:
+
+  - What is the name of the malware that infected my PC?
+  - What is the name of the persistence mechanism?
+  - What folder did the infection originate from? 
+
+  Flag format: `DUCTF{lowerCaseMalwareName_persistenceName_originatingFolderName}`
+
+  ---
+
+  You can download the memory dump [here](https://mirror.aarnet.edu.au/pub/DownUnderCTF/JacobsPC.7z).
+
+  The file is password protected. The password is `I83xOkTzeljDmpMmZWTi`.
+
+  Author: Conletz#5420
+
+tags:
+  - medium
+
+flags:
+  - DUCTF{jigsaw_firefox.exe_PJxhJQ9yUDoBF1188y}

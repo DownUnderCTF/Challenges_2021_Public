@@ -1,0 +1,17 @@
+version: "0.1"
+id: not-as-bad-bucket
+name: Not as Bad Bucket
+category: cloud
+description: >
+  Okay fine I admit it, we didn't invest in security in my previous website and we learnt our lesson. Luckily we had a Professional Cloud Architect, architect our new security strategy for our website 2.0!
+
+
+  Author: Blue Alder
+
+connection_info: https://storage.googleapis.com/ductf-not-as-bad-ductf/index.html
+
+tags:
+  - easy
+
+flags:
+  - DUCTF{all_AUTHENTICATED_users_means_ALL_AUTHENTICATED_USERS_silly}

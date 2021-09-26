@@ -1,0 +1,18 @@
+version: "0.1"
+id: substitution-cipher-i
+name: Substitution Cipher I
+category: crypto
+description: |
+  Just a simple substitution cipher to get started...
+
+  Author: joseph#8210
+
+tags:
+  - beginner
+
+files:
+  - ./challenge/substitution-cipher-i.sage
+  - ./challenge/output.txt
+
+flags:
+  - DUCTF{sh0uld'v3_us3d_r0t_13}

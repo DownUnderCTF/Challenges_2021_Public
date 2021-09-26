@@ -1,0 +1,11 @@
+aioredis==2.0.0
+anyio==3.3.0
+asgiref==3.4.1
+async-timeout==4.0.0a3
+click==8.0.1
+h11==0.12.0
+idna==3.2
+sniffio==1.2.0
+starlette==0.16.0
+typing-extensions==3.10.0.0
+uvicorn==0.14.0

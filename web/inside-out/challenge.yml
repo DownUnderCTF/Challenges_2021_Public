@@ -1,0 +1,23 @@
+version: "0.1"
+id: inside-out
+name: Inside Out
+category: web 
+description: |
+  You're hot then you're cold.
+
+  You're yes then you're no.
+
+  You're out but somehow in... 
+
+  Wait is that right?
+
+  Author: Solopie 
+
+connection_info: ${url}
+
+tags:
+  - beginner 
+
+flags:
+  - DUCTF{very_spooky_requests}
+  - DUCTF{very_spooky_request}

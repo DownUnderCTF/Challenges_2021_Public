@@ -1,0 +1,17 @@
+version: "0.1"
+id: bad-bucket
+name: Bad Bucket
+category: cloud
+description: >
+  Aw yea have you guys SEEN my new website... its nearly done I swear! I've uploaded it to the ☁️CLOUD☁️ and shared it with you guys now so you can see it! Check it out here
+
+
+  Author: Blue Alder
+
+connection_info: https://storage.googleapis.com/the-bad-bucket-ductf/index.html
+
+tags:
+  - easy
+
+flags:
+  - DUCTF{if_you_are_beggining_your_cloud_journey_goodluck!}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>FarSight</title>
+        <script>
+            !localStorage.getItem("token") && window.location.replace("/login.html");
+        </script>
+        <link rel="stylesheet" href="https://unpkg.com/chota@latest" />
+        <script src="https://unpkg.com/navigo"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.1/purify.min.js"
+            integrity="sha512-S/PLyajatVDMRoX6YRLkZ83bPizWLo1MspY/ZgBNEujw39occlW8RxuBKn/NBDgrMXDsz0r3z4vj24reW4PvmQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.1/marked.min.js"
+            integrity="sha512-VUuO/d6MS7hXmiFGEj7HtUa2FCI6Ll+xPvX9yX3bxn7ZqDWwleqXa8dtW13brbZ1ld2jiTrv8hWbpfp4B5mi4Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script type="module" src="assets/index.mjs"></script>
+    </head>
+
+    <body style="margin: 3em">
+        <nav class="nav">
+            <div class="nav-left">
+                <a class="brand">FarSight</a>
+                <div class="tabs">
+                    <a href="/home" data-navigo>Home</a>
+                    <a href="/browser" data-navigo>Browser</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a class="button outline" href="/logout" data-navigo>Logout</a>
+            </div>
+        </nav>
+        <div class="container" style="margin-top: 5em" data-view="home">
+            <h1>FarSight</h1>
+            <p>
+                FarSight lets you host your own sites containing Markdown Pages. All you need to do is make an account
+                and we'll give you a free site!
+            </p>
+            <p>You can host private sites or make them public to share them with your friends!</p>
+            <p>
+                We're still developing the service actively and are looking for users to test and trial our beta
+                features!
+            </p>
+            <div class="is-horizontal-align">
+                <img src="https://source.unsplash.com/NEvS5lHyrlk/640x426" />
+            </div>
+            <div style="text-align: center">
+                <small
+                    >Photo By <a href="https://unsplash.com/@cadop">Mathew Schwartz</a> on
+                    <a href="https://unsplash.com/">Unsplash</a></small
+                >
+            </div>
+        </div>
+        <div class="container" style="margin-top: 3em; display: none" data-view="browser">
+            <div>
+                <div style="display: flex; justify-content: space-between; align-items: center">
+                    <h5>Goto:</h5>
+                    <div>
+                        <button id="page-add" class="button primary" style="padding: 0.5rem 2.5rem; font-size: 0.75em">
+                            Add Page
+                        </button>
+                        <button id="conf-add" class="button dark" style="padding: 0.5rem 2.5rem; font-size: 0.75em">
+                            Site Config
+                        </button>
+                    </div>
+                </div>
+                <select id="page-list"></select>
+            </div>
+            <header style="margin-top: 2rem"><h1>Loading...</h1></header>
+            <main class="container"></main>
+        </div>
+        <div
+            id="page-modal"
+            style="
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100vw;
+                background-color: #33333399;
+                z-index: 1337;
+                display: none;
+            "
+        >
+            <div style="width: 40vw; background-color: white; margin-top: 25vh; margin-left: 30vw">
+                <div class="card">
+                    <header><h4>New Page</h4></header>
+                    <form>
+                        <input placeholder="Page Title" name="name" required />
+                        <textarea
+                            placeholder="Page Content"
+                            name="content"
+                            required
+                            rows="12"
+                            style="resize: vertical"
+                        ></textarea>
+                    </form>
+                    <footer class="is-right" style="margin-top: 2em">
+                        <a class="button primary" data-modal="submit">Create</a>
+                        <a class="button" data-modal="close">Cancel</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <div
+            id="conf-modal"
+            style="
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100vw;
+                background-color: #33333399;
+                z-index: 1337;
+                display: none;
+            "
+        >
+            <div style="width: 40vw; background-color: white; margin-top: 25vh; margin-left: 30vw">
+                <div class="card">
+                    <header><h4>Site Config</h4></header>
+                    <textarea
+                        placeholder="Config JSON"
+                        name="config"
+                        required
+                        rows="12"
+                        style="resize: vertical; font-family: monospace"
+                    ></textarea>
+                    <footer class="is-right" style="margin-top: 2em">
+                        <a class="button primary" data-modal="submit">Submit</a>
+                        <a class="button" data-modal="close">Cancel</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

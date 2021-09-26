@@ -1,0 +1,18 @@
+version: "0.1"
+id: the-internet-is-written-in-ink
+name: The Internet is Written in Ink
+category: OSINT
+description: >
+  One of the interns, Ducky, accidentally posted DUCTF data publicly, he said he was successful in scrubbing it from what he called "CTF clock" and mentioned the number four hundred and four ¯\\_(ツ)_/¯. 
+
+
+  Ducky wouldn't screw up twice would he?
+
+
+  Author: Crem
+
+tags:
+  - easy
+
+flags:
+  - DUCTF{a5abef5222adc680a453607384bcb4d2}

@@ -1,0 +1,32 @@
+version: '2'
+
+services:
+  website:
+    build: .
+    depends_on:
+      - db
+    links:
+      - xssbot
+      - db
+    env_file:
+      - '.env'
+    ports:
+      - "1337:1337"
+
+  db:
+    image: mysql:5.7
+    container_name: mysql_container
+    ports:
+      - "3306:3306"
+    env_file:
+      - '.env'
+
+  xssbot:
+    image: ghcr.io/downunderctf/docker-vendor/xssbot:chrome
+    privileged: true
+    ports:
+     - 8000:80
+    volumes:
+      - ./challenge/cookiejar:/var/marvin/auth/cookiejar
+    env_file:
+      - '.env'

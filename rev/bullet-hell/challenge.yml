@@ -1,0 +1,23 @@
+version: "0.1"
+id: bullet-hell
+name: bullet hell
+category: reversing
+description: >
+  Can you survive in this land of illusions?
+
+
+  SSH password: `ductf`
+
+
+  Author: joseph#8210
+
+connection_info: ssh ductf@${host} -p ${port}
+
+tags:
+  - medium
+
+files:
+  - ./challenge/bullet_hell
+
+flags:
+  - DUCTF{i_th1nk_w3're_g0nna_n33d_a_lunatic_d1fficul7y}

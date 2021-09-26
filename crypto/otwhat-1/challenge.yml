@@ -1,0 +1,16 @@
+version: "0.1"
+id: otwhat-1
+name: OTWhat 1
+category: crypto
+description: |
+  We found this exposed IoT thing. It doesn't do anything we can exploit, but there's a HTTP server that's meant for updating. We have a malicious update server at `https://EVILCODE/`, and any path can work with the update mechanism, but we don't have an OEM signature for it. Can you trick it into running our malware?
+
+  Author: nullableVoid*#7225 
+
+connection_info: ${url}
+
+tags:
+  - easy
+
+flags:
+  - DUCTF{https://wiibrew.org/wiki/Signing_bug#L0L_memcmp=strcmp}

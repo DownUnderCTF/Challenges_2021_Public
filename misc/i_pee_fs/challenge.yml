@@ -1,0 +1,17 @@
+version: "0.1"
+id: i-pee-fs
+name: i-pee fs
+category: misc
+description: >
+  I'm currently working on a new project called i-pee fs, which can be hosted on your average run of the mill potato. Don't mash it too hard...
+
+
+  Author: dot
+
+connection_info: nc ${host} ${port}
+
+tags:
+  - medium
+
+flags:
+  - DUCTF{FAT32_0v3r_IPv16_q01KQYYS6a}

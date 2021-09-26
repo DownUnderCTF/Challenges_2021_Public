@@ -1,0 +1,20 @@
+version: "0.1"
+id: floormat
+name: Floormat
+category: misc
+description: >
+  I've opened a new store that provides free furnishings and floormats. If you know the secret format we might also be able to give you flags...
+
+
+  Author: todo#7331
+
+connection_info: nc ${host} ${port}
+
+tags:
+  - easy
+
+files:
+  - ./publish/floormat.py
+
+flags:
+  - DUCTF{fenomenal_flags_from_funky_formats_ffffff}

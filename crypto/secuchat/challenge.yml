@@ -1,0 +1,21 @@
+version: "0.1"
+id: secuchat
+name: Secuchat
+category: crypto
+description: >
+  "With end-to-end encryption facilitated by military-grade RSA2048-OAEP and user-generated AES-256-CBC keys, rest assured that Secuchat has your conversations and secrets obscured from prying eyes."
+
+
+  Shame their DB got dumped. See if you can glean anything.
+
+
+  Author: nullableVoid*#7225 
+
+tags:
+  - medium
+
+files:
+  - ./publish/secuchat.db
+
+flags:
+  - DUCTF{pr1m1t1v35, p4dd1ng, m0d35- wait, 3n7r0py?!}

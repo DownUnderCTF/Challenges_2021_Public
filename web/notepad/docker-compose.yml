@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  redis:
+    image: redis
+  marvin:
+    image: ghcr.io/downunderctf/docker-vendor/xssbot:chrome
+    privileged: true
+    environment:
+      OUTBOUND_AUTH_METHOD: http-get
+      NODE_ENVIRONMENT: development
+      OUTBOUND_AUTH_HTTP_GET_URL: https://web-notepad-f6ed1a7d.chal-2021.duc.tf/admin/marvin-login?token=50836e6f7a5bb45cf77554e8618f0bc7
+  notepad:
+    image: notepad.web.ctf.local
+    build: .
+    environment:
+      MARVIN_HOST: marvin
+      MARVIN_TOKEN: 50836e6f7a5bb45cf77554e8618f0bc7
+      SECRET_KEY: 7a1ed1d0c800f8aa4f4f13593a63b0e2
+      REDIS_HOST: redis
+    ports:
+      - 8000:5000

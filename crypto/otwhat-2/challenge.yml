@@ -1,0 +1,16 @@
+version: "0.1"
+id: otwhat-2
+name: OTWhat 2
+category: crypto
+description: |
+  "We have been notified by our customers that unauthorised code has been executed on devices using a cryptographic oversight, likely by an Australian APT. We are deeply sorry, and will aim to work with affected customers and law enforcement. For the time being, we urge our customers to update to the latest version (6.9) which uses the more sophisticated ECDSA scheme facilitated by government-approved cryptography (P-256) and also provides an audit log for incident response."
+
+  Author: nullableVoid*#7225 
+
+connection_info: ${url}
+
+tags:
+  - medium
+
+flags:
+  - DUCTF{27C3 Console Hacking 2010 (PS3 3p1c F41l)}

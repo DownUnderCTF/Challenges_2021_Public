@@ -1,0 +1,18 @@
+version: "0.1"
+id: flag-printer
+name: flag printer
+category: reversing
+description: >
+  What more could you ask for than a program that prints out the flag for you? Just run it and the flag is yours!
+
+
+  Author: joseph#8210
+
+tags:
+  - medium
+
+files:
+  - ./challenge/flag_printer
+
+flags:
+  - DUCTF{g0tta_GO_f4sTtTTtt!11!1!!_1c5eff59b5e8814d7f92}

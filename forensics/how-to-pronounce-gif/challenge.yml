@@ -1,0 +1,17 @@
+version: "0.1"
+id: how-to-pronounce-gif
+name: How to pronounce GIF
+category: forensics
+description: |
+  Our machine that makes QR Codes started playing up then it just said "PC LOAD LETTER" and died. This is all we could recover...
+ 
+  Author: xXl33t_h@x0rXx
+
+tags:
+  - easy
+
+files:
+  - ./challenge/challenge.gif
+
+flags:
+  - DUCTF{aM_1_haXX0r_n0w?}

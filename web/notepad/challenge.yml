@@ -1,0 +1,19 @@
+version: "0.1"
+id: notepad
+name: Notepad
+category: web
+description: |
+  I made a markdown editor for all your hacking notes!
+
+  Author: todo#7331
+
+connection_info: ${url}
+
+tags:
+  - hard
+
+files:
+  - ./publish/app.py
+
+flags:
+  - DUCTF{ch4ining_c5rf_c4uses_cha0s_2045c24d}

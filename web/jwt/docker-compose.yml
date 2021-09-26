@@ -1,0 +1,6 @@
+version: '3'
+services:
+  jwt:
+    build: .
+    ports:
+      - "1337:80"

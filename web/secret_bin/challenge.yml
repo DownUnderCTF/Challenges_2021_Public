@@ -1,0 +1,21 @@
+version: "0.1"
+id: secret-bin
+name: Secret Bin
+category: web
+description: |
+  Since everyone loves dumping their secrets into pastebin, I decided to make a dedicated service for it instead!
+  I've added few secrets myself to inflate our marketing numbers, I wonder if you can find them.
+
+  Author: todo#7331
+
+connection_info: ${url}
+
+files:
+  - publish/app.py
+  - publish/secret_manager.py
+
+tags:
+  - easy
+
+flags:
+  - DUCTF{cant_guess_this_one_9ed609c7-8978-4337-a7de-f618b859b998}

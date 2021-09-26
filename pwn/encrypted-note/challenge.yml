@@ -1,0 +1,21 @@
+version: "0.1"
+id: encrypted-note
+name: encrypted note
+category: pwn
+description: >
+  Encrypted notepad as a service...
+
+
+  Author: joseph#8210
+
+connection_info: nc ${host} ${port}
+
+tags:
+  - hard
+  - crypto
+
+files:
+  - ./challenge/encrypted_note
+
+flags:
+  - DUCTF{c4n_1_g3t_a_p1zza_th4t_1s_h4lf_p3pper0n1_4nd_h4lf_ch33s3_ple4se!}

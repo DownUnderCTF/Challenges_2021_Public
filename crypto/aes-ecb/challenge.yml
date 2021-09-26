@@ -1,0 +1,19 @@
+version: "0.1"
+id: aes-ecb
+name: Break Me!
+category: crypto
+description: |
+  AES encryption challenge.
+
+  Author: 2keebs
+
+connection_info: nc ${host} ${port}
+
+tags:
+  - easy
+
+files:
+  - ./challenge/aes-ecb.py
+
+flags:
+  - DUCTF{ECB_M0DE_K3YP4D_D474_L34k}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notepad</title>
+        <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+        {% block load %}{% endblock %}
+    </head>
+    <body class="is-center" style="height: 100vh; background: linear-gradient(to right, #00d2ff, #3a7bd5);">
+        <main style="width: 45vw; border-radius: 0" class="card">
+            <header>{% block header %}{% endblock %}</header>
+            <section>{% block content %}{% endblock %}</section>
+            <footer>{% block footer %}{% endblock %}</footer>
+        </main>
+    </body>
+</html>

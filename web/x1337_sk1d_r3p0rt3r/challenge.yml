@@ -1,0 +1,16 @@
+version: "0.1"
+id: x1337-sk1d-r3p0rt3r
+name: x1337 Sk1d R3p0rt3r
+category: web
+description: |
+  Pesky sk1dz everywhere, they are being taken offline left right and centre! It looks like th3 sk1dz have been reporting eachother on this site, something something cyber justice?
+
+  Author: xesh
+
+connection_info: ${url}
+
+tags:
+  - medium
+
+flags:
+  - DUCTF{xxX_x55_4_1337_h4x0rz_Xxx}

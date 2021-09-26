@@ -1,0 +1,20 @@
+version: "0.1"
+id: jasons-proxy
+name: Jasons Proxy
+category: web
+description: |
+  NotCloudeFlare have been informed of a new up and coming rival CDN, Jasons Image Hosting. They want you to try and hack your way in >:)
+
+  Author: xesh
+
+connection_info: ${url}
+
+tags:
+  - hard
+  
+files:
+  - ./web/app.py
+  - ./proxy.py
+
+flags:
+  - DUCTF{d0ubl3_js0n_d0ubl3_URI_r1p_j4s0n5_p4th_w1th_b1g_h4xx}

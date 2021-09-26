@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>FarSight | Login</title>
+        <link rel="stylesheet" href="https://unpkg.com/chota@latest" />
+    </head>
+
+    <body style="margin: 3em">
+        <nav class="nav">
+            <div class="nav-left">
+                <a class="brand">FarSight</a>
+                <div class="tabs">
+                    <a href="/home" data-navigo>Home</a>
+                    <a href="/browser" data-navigo>Browser</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container" style="margin-top: 5em">
+            <h1>FarSight | Login Or Register</h1>
+            <form id="login" class="col col-6">
+                <p>
+                    <label for="username">Username</label>
+                    <input id="username" name="username" required />
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" required />
+                </p>
+                <p>
+                    <button class="button primary">Submit</button>
+                </p>
+            </form>
+        </div>
+        <script type="module">
+            import { graphql } from "./assets/util.mjs";
+            document.querySelector("#login").addEventListener("submit", async function (e) {
+                e.preventDefault();
+                e.stopImmediatePropagation();
+
+                const data = Object.fromEntries(new FormData(this).entries());
+                const res = (
+                    await graphql(
+                        `
+                            mutation login($username: String!, $password: String!) {
+                                loginOrRegister(username: $username, password: $password)
+                            }
+                        `,
+                        data
+                    )
+                ).loginOrRegister;
+
+                if (!res) {
+                    alert("Incorrect username or password");
+                }
+
+                localStorage.setItem("token", res);
+                window.location.replace("/");
+            });
+        </script>
+    </body>
+</html>

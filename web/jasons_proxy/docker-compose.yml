@@ -1,0 +1,8 @@
+version: "2"
+services:
+  web:
+    environment:
+      - FLAG=DUCTF{d0ubl3_js0n_d0ubl3_URI_r1p_j4s0n5_p4th_w1th_b1g_h4xx}
+    build: .
+    ports:
+      - "5000:80"

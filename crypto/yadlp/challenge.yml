@@ -1,0 +1,19 @@
+version: "0.1"
+id: yadlp
+name: yadlp
+category: crypto
+description: >
+  Yet another discrete logarithm problem challenge...
+
+
+  Author: joseph#8210
+
+tags:
+  - hard
+
+files:
+  - ./challenge/yadlp.sage
+  - ./challenge/output.txt
+
+flags:
+  - DUCTF{a_1337_hyp3rb0la_m33ts_th3_mult1pl3_DLP!!}

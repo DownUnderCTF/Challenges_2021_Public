@@ -1,0 +1,21 @@
+version: "0.1"
+id: rbp
+name: ready, bounce, pwn!
+category: pwn
+description: >
+  Let's play with `rbp`.
+
+
+  Author: joseph#8210
+
+connection_info: nc ${host} ${port}
+
+tags:
+  - medium
+
+files:
+  - ./challenge/rbp
+  - ./challenge/libc.so.6
+
+flags:
+  - DUCTF{n0_0verfl0w?_n0_pr0bl3m!}

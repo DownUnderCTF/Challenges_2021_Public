@@ -1,0 +1,11 @@
+certifi==2021.5.30
+cffi==1.14.6
+charset-normalizer==2.0.4
+cryptography==3.4.8
+gmpy2==2.0.8
+idna==3.2
+pycparser==2.20
+pycryptodome==3.10.1
+PyJWT==2.1.0
+requests==2.26.0
+urllib3==1.26.6

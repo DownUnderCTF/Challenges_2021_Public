@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row d-flex justify-content-center w-100 mt-3">
+	<div class="col-12">
+		<div class="card text-white bg-dark">
+			<div class="card-body justify-content-center text-center" id="report">
+				<h4 class="card-title">Sk1d R3p0r7 #{{ report.id }}</h4>
+				<hr/>
+				<p class="text-white" id="reportMessage">
+					{{ username }} -> {{ report.message }}
+				</p>
+				<hr/>
+				<p class="text-muted" id="previousReports">
+					Previous Reports by {{ current_user.username }}><br/>
+					{% for prep in previous_reports %}
+						{{ prep[0] }}{{ prep[1] }}<br/>
+					{% endfor %}
+				</p>
+				<a href="{{ url_for('_send2admin',id=report.id) }}" class="btn btn-success">Send Report to Admin</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

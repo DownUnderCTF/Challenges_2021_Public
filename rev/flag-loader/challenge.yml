@@ -1,0 +1,20 @@
+version: "0.1"
+id: flag-loader
+name: flag loader
+category: reversing
+description: >
+  What more could you ask for than a program that loads the flag for you? Just answer a few simple questions and the flag is yours!
+
+
+  Author: joseph#8210
+
+connection_info: nc ${host} ${port}
+
+tags:
+  - easy
+
+files:
+  - ./challenge/flag_loader
+
+flags:
+  - DUCTF{y0u_sur3_kn0w_y0ur_int3gr4l_d4t4_typ3s!}

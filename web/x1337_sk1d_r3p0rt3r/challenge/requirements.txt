@@ -1,0 +1,7 @@
+flask
+flask-login
+flask-wtf
+flask_sqlalchemy
+flask_limiter
+requests
+gunicorn

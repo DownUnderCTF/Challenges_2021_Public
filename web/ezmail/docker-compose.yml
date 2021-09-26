@@ -1,0 +1,24 @@
+services:
+  ldap:
+    image: docker.io/bitnami/openldap
+    ports:
+      - 1389:1389
+      - 1636:1636
+    environment:
+      - LDAP_ROOT=dc=ductf,dc=org
+      - LDAP_ADMIN_USERNAME=zzchallengeadmin
+      - LDAP_ADMIN_PASSWORD=JeQ2MjV7qdQbvHQBkosr_k_Qw679leHv
+    volumes:
+      - ./data/users.ldif:/ldifs/users.ldif
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
+  app:
+    image: ezmail.web.ctf.local
+    build: .
+    environment:
+      - REDIS_HOST=redis
+      - LDAP_HOST=ldap:1389
+    ports: [ 8000:8000 ]
+    links: [ ldap, redis ]

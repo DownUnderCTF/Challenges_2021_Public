@@ -1,0 +1,20 @@
+version: "0.1"
+id: juniperus
+name: Juniperus
+category: reversing
+description: >
+  How the hell did they break into our firewalls? We had strong passwords and everything!
+
+
+  Author: nullableVoid*#7225 
+
+connection_info: nc ${host} ${port}
+
+files:
+  - ./challenge/shell
+
+tags:
+  - easy
+
+flags:
+  - DUCTF{57r1ng5-4bl3... k1nd4}

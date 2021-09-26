@@ -1,0 +1,16 @@
+version: "3"
+services:
+  marvin:
+    image: ghcr.io/downunderctf/docker-vendor/xssbot:chrome
+    privileged: true
+    environment:
+     OUTBOUND_AUTH_METHOD: http-get
+     OUTBOUND_AUTH_HTTP_GET_URL: http://web:5000/login?token=KJDF4wn90sdfjUOIDFndfs2389dsfgj
+  web:
+    environment:
+      # Admin Secret to Auth marvin
+      ADMIN_PW: KJDF4wn90sdfjUOIDFndfs2389dsfgj
+    links:
+      - "marvin"
+    ports:
+      - "5000:5000"

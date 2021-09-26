@@ -1,0 +1,18 @@
+version: "0.1"
+id: substitution-cipher-iii
+name: Substitution Cipher III
+category: crypto
+description: |
+  Wait a **MI**nute, that's not a substitution cipher!
+
+  Author: joseph#8210
+
+tags:
+  - hard
+
+files:
+  - ./challenge/substitution-cipher-iii.sage
+  - ./challenge/output.txt
+
+flags:
+  - DUCTF{MQ_1s_fun_a5e39cf21a}

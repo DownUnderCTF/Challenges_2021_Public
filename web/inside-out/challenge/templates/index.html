@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Index{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <p>Welcome fellow hackers!</p>
+    <p>Need to hide your requests? You're in the right place.</p>
+    <p>Send your requests through our server and you'll never be found.</p>
+    <a href="/request?url=http://example.com/">Proxy Example</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p><i>We're DEFINITELY not recording your web requests.</i></p>
+    <!-- <a href="/admin">Admin Panel</a> -->
+{% endblock %}

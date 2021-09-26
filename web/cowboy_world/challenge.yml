@@ -1,0 +1,17 @@
+version: "0.1"
+id: cowboy-world
+name: Cowboy World
+category: web
+description: >
+  I heard this is the coolest site for cowboys and can you find a way in?
+
+
+  Author: Crem
+
+connection_info: ${url}
+
+tags:
+  - beginner
+
+flags:
+  - DUCTF{haww_yeeee_downunderctf?}

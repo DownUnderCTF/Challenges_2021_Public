@@ -1,0 +1,38 @@
+version: "0.1"
+id: sharing-is-caring
+name: Sharing is Caring
+category: OSINT
+description: |
+  We have identified a username associated with one of the suspects: `alex_elgato93`. They seem pretty active on social media. Surely with all these posts they must have slipped up somewhere and given us a way to work out their location?
+
+  Please tell us the name of the closest street, with any spaces replaced by underscores.
+
+  Author: xXl33t_h@x0rXx
+
+tags:
+  - hard
+
+flags:
+  - {
+        type: "static",
+        content: "DUCTF{charles_mcintosh_pkwy}",
+        data: "case_insensitive",
+    } 
+
+  - {
+        type: "static",
+        content: "DUCTF{charles_mcintosh_parkway}",
+        data: "case_insensitive",
+    } 
+
+  - {
+        type: "static",
+        content: "charles_mcintosh_pkwy",
+        data: "case_insensitive",
+    } 
+
+  - {
+        type: "static",
+        content: "charles_mcintosh_parkway",
+        data: "case_insensitive",
+    }

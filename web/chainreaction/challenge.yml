@@ -1,0 +1,16 @@
+version: "0.1"
+id: chainreaction
+name: Chainreaction
+category: web
+description: |
+  A bunch of university students want to start a company and hired some young university students. I wonder if they paid any attention to security. 
+  
+  Author: n00bmaster
+
+connection_info: ${url}
+
+tags:
+  - easy
+
+flags:
+  - DUCTF{_un1c0de_bypass_x55_ftw!}

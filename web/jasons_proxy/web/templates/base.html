@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<title>Jasons Image Hosting</title>
+</head>
+
+
+<body class="h-100 w-100 text-center text-white bg-dark">
+
+	<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-auto">
+			<h3 class="float-md-start mb-0">Jasons Image Hosting</h3>
+		</header>
+
+		<main class="px-1 h-75">
+			{% block content %}
+			{% endblock %}
+		</main>
+
+		<footer class="mt-auto text-white-50">
+			<a href="{{ url_for('_flag') }}" class="text-muted">Here is your flag</p>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.card-img-top').each(function(i){
+    			fetch('{{ url_for('_app_jason_loader') }}', {
+    				method:"POST", 
+    				headers:{ 
+    					"Content-Type": "application/json"
+    				}, 
+    				body:JSON.stringify({
+    					"img": btoa(`http://127.0.0.1/static/images/${i+1}.png`)} )} ).then(
+    					 	response => { 
+    					 		response.json().then(data => {
+    					 			$(this).attr('src','data:image/png;base64,'+data['imagedata'])
+    					 		})
+    						}
+    					)
+					}
+				)
+		})
+	</script>
+</body>
+
+</html>

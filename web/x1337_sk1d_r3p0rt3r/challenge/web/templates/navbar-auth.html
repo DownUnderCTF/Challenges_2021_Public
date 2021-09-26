@@ -1,0 +1,7 @@
+<div class="col-md-4">
+	<span class="text-muted text-monospace">Logged in as {{ current_user.username }}</span>
+</div>
+<nav class="nav nav-masthead text-end">
+	<a class="nav-link{% if title == 'Dashboard' %} active" aria-current="page"{% else %}"{% endif %} href="{{ url_for('_dashboard') }}">Dashboard</a>
+	<a class="nav-link{% if title == 'Logout' %} active" aria-current="page"{% else %}"{% endif %} href="{{ url_for('_logout') }}">Logout</a>
+</nav>

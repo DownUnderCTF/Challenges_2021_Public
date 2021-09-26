@@ -1,0 +1,32 @@
+# We do a few simple challenges without timeouts first
+# This first one is the challenge "42", not a timeout of 42
+42
+# Walks a pair of edges back and forth
+lol
+# And then repeats the path
+lolol
+# This one hits a node self-loop to ensure they understand that
+deadbeef
+# These should ensure they can determine edge order
+cafec0de
+c0decafe
+
+# Now we'll do some longer ones and add timeouts to ensure they can go fast
+having fun yet?;120
+correct horse battery staple;60
+
+# It should be necessary to be smart from now on, stupid solvers will hit a
+# wall as we go faster and faster
+gotta go faster, faster, faster, faster, faster;30
+# This is a rick roll lol
+https://www.youtube.com/watch?v=0SoNH07Slj0;15
+
+# Popular culture <:)
+somebody once told me the world is gonna roll me i ain't the sharpest tool in the shed;5
+# Next lines reversed
+daeherof reh no L na fo epahs eht ni bmuht reh dna regnif reh htiw bmud fo dnik gnikool saw ehs;3
+# Literature - this one is deliberately tight, with the goal being to force the
+# player to realise that they don't need to waste time factoring at all. We
+# only force them to match decent Python performance though so there are a
+# bunch of ways they can still meet this criteria while still factoring `a`.
+According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyways. Because bees don't care what humans think is impossible.;2

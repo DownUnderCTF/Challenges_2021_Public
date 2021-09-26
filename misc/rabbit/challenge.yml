@@ -1,0 +1,17 @@
+version: "0.1"
+id: rabbit
+name: rabbit
+category: misc
+description: |
+  Can you find Babushka's missing vodka? It's buried pretty deep, like 1000 steps, deep.
+
+  Author: Crem + z3kxTa
+
+tags:
+  - easy
+
+files:
+  - ./publish/flag.txt
+
+flags:
+  - DUCTF{babushkas_v0dka_was_h3r3}

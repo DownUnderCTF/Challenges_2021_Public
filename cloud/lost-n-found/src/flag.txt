@@ -1,0 +1,1 @@
+DUCTF{its_time_to_clean_up_your_service_account_permissions!}

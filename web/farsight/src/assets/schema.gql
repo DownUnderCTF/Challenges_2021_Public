@@ -1,0 +1,56 @@
+type User {
+    id: ID!
+    "Username"
+    username: String!
+    "Sites owned by the user"
+    sites: [Site!]!
+}
+
+type Site {
+    id: ID!
+    "Name or title of the site"
+    name: String!
+    "Pages in the site"
+    pages: [Page!]!
+    "Should this site be accessible by non-owner users"
+    public: Boolean!
+    "Owner of the site"
+    owner: User!
+    "Configurations to control styling - please do not store secrets here"
+    config: [ConfigPair!]!
+}
+
+type ConfigPair {
+    key: String!
+    value: String!
+}
+
+type Page {
+    id: ID!
+    "Name or title of the page"
+    name: String!
+    "Markdown content of the page"
+    content: String!
+    "(beta) Main site which hosts this page"
+    ownerSite: Site!
+    "(beta) Sites that reference this page"
+    siteRefs: [Site!]!
+}
+
+type Query {
+    "Get the current user"
+    me: User
+    "Get a site by ID"
+    site(id: ID!): Site
+}
+
+type Mutation {
+    "Login as a user"
+    loginOrRegister(username: String!, password: String!): String
+    "Create a new page"
+    newPage(name: String, content: String, siteId: ID!): ID!
+    "Sets site config"
+    setSiteConfig(config: String!, siteId: ID!): ID!
+    "(beta) import an existing page into the site"
+    importPage(pageId: ID!, siteId: ID!): ID!
+}

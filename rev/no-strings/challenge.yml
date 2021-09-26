@@ -1,0 +1,18 @@
+version: "0.1"
+id: no-strings
+name: no strings
+category: reversing
+description: >
+  This binary contains a free flag. No strings attached, seriously!
+
+
+  Author: joseph#8210
+
+tags:
+  - beginner
+
+files:
+  - ./challenge/nostrings
+
+flags:
+  - DUCTF{stringent_strings_string}

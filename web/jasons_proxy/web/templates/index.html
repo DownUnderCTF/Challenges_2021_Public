@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row mb-3 pb-3">
+	<div class="col-4">
+		<div class="card text-white bg-dark">
+			<img src="{{ url_for('static',filename='/images/placeholder.png') }}" class="card-img-top">
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="card text-white bg-dark">
+			<img src="{{ url_for('static',filename='/images/placeholder.png') }}" class="card-img-top">
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="card text-white bg-dark">
+			<img src="{{ url_for('static',filename='/images/placeholder.png') }}" class="card-img-top">
+		</div>
+	</div>
+</div>
+<div class="row justify-content-center mt-3 pt-3">
+	<div class="col-10">
+		<blockquote class="blockquote">
+			<h1 class="mb-0">Cool images huh?</h1>
+			<small class="text-muted">
+				Here are Jasons Image Hosting, we have developed a state of the art Content Distribution Network (CDN). Delivering super fast, super secure content. Contact Jason today to get your business setup with Jasons Image Hosting today!
+			</small>
+		</blockquote>
+	</div>
+</div>
+{% endblock %}

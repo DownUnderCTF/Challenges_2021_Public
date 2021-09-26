@@ -1,0 +1,18 @@
+version: "0.1"
+id: substitution-cipher-ii
+name: Substitution Cipher II
+category: crypto
+description: |
+  That's an interesting looking substitution cipher...
+
+  Author: joseph#8210
+
+tags:
+  - easy
+
+files:
+  - ./challenge/substitution-cipher-ii.sage
+  - ./challenge/output.txt
+
+flags:
+  - DUCTF{go0d_0l'_l4gr4ng3}

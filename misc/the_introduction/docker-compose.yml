@@ -1,0 +1,7 @@
+version: "2"
+services:
+  the_introduction:
+    build: .
+    privileged: true
+    ports:
+      - "1337:1337"

@@ -1,0 +1,54 @@
+{
+    "messages": [
+        {
+            "username": "admin",
+            "message": "Now we have a chat for admins and devs who are working on this project, if you have any questions/bugs/etc just post them here. This is just a beta feature, if it works out well we will leave it in.",
+            "timesent": 1
+        },
+        {
+            "username": "john",
+            "message": "There is a small bug with register/login, it is acting very weird with unicode characters and causes errors with SQLAlchemy when adding those unicode characters. Anyone know a fix? Also the about me section was all html escaped making it look ugly, need to try and find a fix for that as well. It looks very ugly.",
+            "timesent": 2
+        },
+        {
+            "username": "wick",
+            "message": "Yea we can normalize them right? to make that work? Only used it once for a uni project this semester, NFKD I think it was, ill see how we go and for the html thing i think its because its being being pasted as raw value, ill just html escape the page instead",
+            "timesent": 3
+        },
+        {
+            "username": "john",
+            "message": "Okay sure. Try to fix it and then get a senior dev to look it over. I think sam is on a holiday so just push the changes for now and he can take a look when he comes back.",
+            "timesent": 4
+        },
+        {
+            "username": "kay",
+            "message": "bruh... you basically just added a vulnerability, why tf are you normalizing after checking the bad characters, and why is there an autoescape on in the profile page? makes no sense to me.",
+            "timesent": 5
+        },
+        {
+            "username": "john",
+            "message": "He is not at work today, coming back monday iirc, welp i guess we will wait till he comes back and get him to fix it up. Luckily we are still in dev so we can catch these problems early.",
+            "timesent": 6
+        },
+        {
+            "username": "john",
+            "message": "Kay can I assign you to the profile page bugs, I swear this guy is going to keep introducing bugs if he keeps going like this",
+            "timesent": 7
+        },
+        {
+            "username": "kay",
+            "message": "Yea sure no worries, Ill try to stay on top of it",
+            "timesent": 8
+        },
+        {
+            "username": "john",
+            "message": "Cool. Let me know when bugs are fixed so we can hire some pentesters to test the website.",
+            "timesent": 9
+        },
+        {
+            "username": "admin",
+            "message": "Sounds good! The admin portal is still under development, kinda want to seperate it from the main app so it will use different sessions. For now I have set a static cookie, but Ill fix that up on Monday.",
+            "timesent": 10
+        }
+    ]
+}

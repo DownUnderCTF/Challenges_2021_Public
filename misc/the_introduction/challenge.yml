@@ -1,0 +1,17 @@
+version: "0.1"
+id: the-introduction
+name: The Introduction
+category: misc
+description: >
+  Are you ready to start your journey?
+
+
+  Author: Crem
+
+connection_info: nc ${host} ${port}
+
+tags:
+  - beginner
+
+flags:
+  - DUCTF{w3lc0m3_70_7h3_duc7f_7hund3rd0m3_h4ck3r}

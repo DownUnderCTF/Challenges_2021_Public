@@ -1,0 +1,68 @@
+{% extends "_pretty.html" %}
+{% block load %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js" integrity="sha512-L03kznCrNOfVxOUovR6ESfCz9Gfny7gihUX/huVbQB9zjODtYpxaVtIaAkpetoiyV2eqWbvxMH9fiSv5enX7bw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.0.7/purify.min.js" integrity="sha512-pAsGSA54gmV3kpBZBDMk7SgP6DnYNNzj6ZFZ6//jUKOaXSSkE5sdbZMazo3u5QOofhZoGeNwo4Z4e526HPQhcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% endblock %}
+{% block header %}
+<h1>Welcome {{ username }}</h1>
+{% endblock %}
+{% block content %}
+<section style="margin-bottom: 2.5em;">
+    <h4>Your Notepad</h4>
+    <nav class="tabs is-full">
+        <a data-view-trigger="view" class="active">View</a>
+        <a data-view-trigger="edit">Edit</a>
+    </nav>
+    <form action="/me" method="POST" id="note-form">
+        <section data-view="view">
+            <div id="markdown">Nothing here yet...</div>
+        </section>
+        <section data-view="edit" class="is-hidden">
+            <textarea style="font-family: monospace;" rows="20" name="note" id="editor">{{ note }}</textarea>
+        </section>
+        <button class="button primary">Save</button>
+    </form>
+</section>
+<section style="display: flex; justify-content: space-around;">
+    <a href="/report" class="button">Report a Bug</a>
+    <a href="/logout" class="button error">Logout</a>
+</section>
+<script>
+    (function() {
+        const converter = new showdown.Converter();
+        const tabs = Array.from(document.querySelectorAll('.tabs > a'));
+        const views = Array.from(document.querySelectorAll('[data-view]'));
+        const noteForm = document.querySelector('#note-form');
+        const markdown = document.querySelector('#markdown');
+        const editor = document.querySelector('#editor');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                views.forEach(v => v.classList.add('is-hidden'));
+                const view = tab.getAttribute('data-view-trigger');
+                document.querySelector(`[data-view="${view}"]`)?.classList.remove('is-hidden');
+
+                if(view === 'view') {
+                    markdown.innerHTML = DOMPurify.sanitize(converter.makeHtml(editor.value));
+                }
+            })
+        });
+
+        noteForm.addEventListener('submit', e => {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+
+            fetch('/me', {
+                method: 'POST',
+                credentials: 'include',
+                headers: {'content-type': 'application/json'},
+                body: JSON.stringify({note: editor.value})
+            }).then(r => alert('Saved!'));
+        });
+
+        markdown.innerHTML = DOMPurify.sanitize(converter.makeHtml(editor.value));
+    })();
+</script>
+{% endblock %}

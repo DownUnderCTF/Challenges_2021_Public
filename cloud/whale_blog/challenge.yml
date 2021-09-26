@@ -1,0 +1,17 @@
+version: "0.1"
+id: whale-blog
+name: Whale Blog
+category: cloud
+description: >
+  You're probably thinking, oh wow here is another challenge author thinking they would be smart by having the word whale in the challenge title, oh wow it's probably Docker. Well you're right whale=docker this challenge has to do with docker. Get that flag ⛳.
+
+
+  Author: Blue Alder
+
+connection_info: http://whale-blog.duc.tf:30000
+
+tags:
+  - medium
+
+flags:
+  - DUCTF{g00nies_got_th1s_l4st_year_now_u_did!}

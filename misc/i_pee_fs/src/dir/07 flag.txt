@@ -1,0 +1,1 @@
+You've made it! DUCTF{FAT32_0v3r_IPv16_q01KQYYS6a}

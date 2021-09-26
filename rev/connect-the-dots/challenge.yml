@@ -1,0 +1,18 @@
+version: "0.1"
+id: connect-the-dots
+name: connect the dots
+category: reversing
+description: >
+  Can you see the forest for the trees?
+
+
+  Author: joseph#8210
+
+files:
+  - ./challenge/connect_the_dots
+
+tags:
+  - medium
+
+flags:
+  - DUCTF{bfs_dfs_ffs_no_more_mazes_a8fb66c12cd}

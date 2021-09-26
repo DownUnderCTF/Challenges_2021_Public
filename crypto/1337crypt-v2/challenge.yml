@@ -1,0 +1,18 @@
+version: "0.1"
+id: 1337crypt-v2
+name: 1337crypt v2
+category: crypto
+description: |
+  [1337crypt](https://github.com/DownUnderCTF/Challenges_2020_public/tree/master/crypto/1337crypt) is back. This time, with added _complexity_.
+
+  Author: joseph#8210
+
+tags:
+  - hard
+
+files:
+  - ./challenge/1337crypt-v2.sage
+  - ./challenge/output.txt
+
+flags:
+  - DUCTF{mantissa_in_crypto??_n0_th4nks!!}

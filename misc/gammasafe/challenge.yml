@@ -1,0 +1,20 @@
+version: "0.1"
+id: gammasafe
+name: GammaSafe
+category: misc
+description: >
+  GammaSafe is the industry standard for a libc resistant against gamma rays and other sources of soft errors, yet suitable for an embedded solution; perfect for satellites in orbit!
+
+
+  Author: nullableVoid*#7225
+
+connection_info: nc ${host} ${port}
+
+tags:
+  - easy
+
+files:
+  - ./publish/gs_strcmp.3
+
+flags:
+  - DUCTF{>[current year]\n>t1m1ng 4774ck5}

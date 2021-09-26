@@ -1,0 +1,79 @@
+import os
+import uuid
+import random
+
+import aioredis
+
+# Some random clock_seq / node ids for uuidv1 generation
+NODES = [
+    (0x8421, 0x00155d1c46cb),
+    (0x8b1e, 0x0401b7194601),
+    (0x880f, 0x000d3acaef36),
+    (0xbb4c, 0x0050568f00a9)
+]
+# Hard code the initial secret keys, just in case we crash and restart
+#   the initial list won't pull from redis which may have many keys at that point
+INITIAL_SECRET_KEYS = [
+    b'62253530118085196351813532537672363830',
+    b'62256146548924067420990329290830577833',
+    b'62250768858165249211119722343915253558',
+    b'62266243465183047778745480567663030070',
+    b'62247122223529205166453304296513138486',
+    b'62249810672767801701912973581122207913',
+    b'62258417307289888747194826504613414603',
+    b'62254842215684595083508419219033878326',
+    b'62256837101588541745264687062159388470',
+    b'62245445359469590761748136938804277046',
+    b'62262624798088371269610632296632239617',
+    b'62252908018553134351926855588316643497',
+    b'62259031959374674410209041010215546678',
+    b'62265400794446546062967671842571830987',
+    b'62264652880592411407903952579316084534',
+    b'62257771518537234979082664574866507265',
+    b'62263399411833273231818885120477818678',
+    b'62264033791730524946590395882245015041',
+    b'62261917845194256488705885848606535478',
+    b'62238348576040538051664640390739198121',
+    b'62251531587685774033897735391525138230',
+    b'62254158238957609443174081711852945577',
+    b'62259939517976275308196175056166645558',
+    b'62252236084506850872104453392696100555',
+    b'62246420499693816330907345835487330473',
+    b'62249140640197418568409944979934216361',
+    b'62247864749868288855517338548158005417',
+    b'62255471208066795831776681922197913769',
+    b'62260682836596984136431876940865553921',
+    b'62261357305944468072209519082900226217',
+    b'62244584703940198308469257526228633089',
+    b'62248448186057043898099377405808279721'
+]
+GREGORIAN_TO_UNIX_100NS = 122192928000000000
+
+
+redis = aioredis.from_url(f"redis://{os.environ.get('REDIS_HOST', 'localhost')}")
+
+
+async def get_secret(secret_id: uuid.UUID):
+    return await redis.get(secret_id.int)
+
+
+async def create_secret(secret_content: bytes):
+    secret_id = make_secret_id()
+    await redis.set(secret_id.int, secret_content)
+    return secret_id
+
+
+async def get_metadata():
+    return {
+        "past_week": list(sorted([
+            (uuid.UUID(int=int(secret_id)).time - GREGORIAN_TO_UNIX_100NS) / (1000 * 1000 * 10)
+            for secret_id in INITIAL_SECRET_KEYS
+        ])),
+        "total_secret_count": await redis.dbsize()
+    }
+
+def make_secret_id():
+    # Simulate some nodes to artificially inflate the search space
+    #  and keep consistency even if we scale up
+    clock_seq, node = random.choice(NODES)
+    return uuid.uuid1(clock_seq=clock_seq, node=node)

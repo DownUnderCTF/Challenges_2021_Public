@@ -1,0 +1,55 @@
+{% extends 'head.html' %}
+{% block body %}
+<!-- Full credit: https://codepen.io/kristinak/pen/bXqayB -->
+<style>
+.bubbleWrapper {
+	padding: 10px 10px;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-self: flex-end;
+  color: #fff;
+}
+
+.inlineContainer {
+  display: inline-flex;
+}
+
+.inlineIcon {
+  width:20px;
+  object-fit: contain;
+}
+
+.otherBubble {
+	min-width: 60px;
+	max-width: 700px;
+	padding: 14px 18px;
+  margin: 6px 8px;
+	background-color: #6C8EA4;
+	border-radius: 16px 16px 16px 0;
+	border: 1px solid #54788e;
+  
+}
+.other {
+	align-self: flex-start;
+}
+span.own,
+span.other{
+  font-size: 14px;
+  color: grey;
+}
+</style>
+
+<h1>Chat here!</h1>
+<hr>
+{% for message in user_messages %}
+  <div class="bubbleWrapper">
+    <div class="inlineContainer">
+      <img class="inlineIcon" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">
+      <div class="otherBubble other">
+        {{ message.message }}
+      </div>
+    </div><span class="other">{{ message.sender }}</span>
+  </div>
+{% endfor %}
+{% endblock body %}

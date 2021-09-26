@@ -1,0 +1,8 @@
+[
+  {
+    "domain": "localhost",
+    "name": "admin-cookie",
+    "value": "sup3rs3cur34dm1nc00k13",
+    "httponly": false
+  }
+]

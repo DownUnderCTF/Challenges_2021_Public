@@ -1,0 +1,46 @@
+version: "0.1"
+id: bridget
+name: Get over it!
+category: OSINT
+description: >
+  "Bridget loves bridges, this one is her favourite."
+
+
+  What is the name of it and the length of its main span to the nearest metre?
+
+
+  Flag format; `DUCTF{bridge_name-#m}`
+
+
+  Author: QUTWH
+
+flags:
+  - {
+        type: "static",
+        content: "DUCTF{Eleanor_Schonell-183m}",
+        data: "case_insensitive",
+    } 
+
+  - {
+        type: "static",
+        content: "DUCTF{Eleanor_Schonell-185m}",
+        data: "case_insensitive",
+    }
+
+  - {
+        type: "static",
+        content: "DUCTF{Eleanor_Schonell_Bridge-183m}",
+        data: "case_insensitive",
+    }
+
+  - {
+        type: "static",
+        content: "DUCTF{Eleanor_Schonell_Bridge-185m}",
+        data: "case_insensitive",
+    }
+
+tags:
+  - easy
+
+files:
+  - ./challenge/get-over-it.jpg

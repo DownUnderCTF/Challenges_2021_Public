@@ -1,0 +1,19 @@
+services:
+    web:
+        build: .
+        image: farsight.web.ctf.local
+        ports: ["8000:8000"]
+        environment:
+            PGUSER: postgres
+            PGPASSWORD: postgres
+            PGHOST: db
+            PGDATABASE: farsight
+        links: [db]
+    db:
+        image: postgres
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_DB: farsight
+        volumes:
+            - ./data/:/docker-entrypoint-initdb.d/

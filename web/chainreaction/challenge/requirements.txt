@@ -1,0 +1,13 @@
+Flask==1.1.2
+Flask_SQLAlchemy==2.4.4
+SQLAlchemy<1.4
+Flask_Login==0.5.0
+Flask_Bcrypt==0.7.1
+apscheduler==3.7.0
+python-dotenv
+Flask-Migrate
+pymysql
+sqlalchemy-utils
+selenium
+flask_limiter
+requests

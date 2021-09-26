@@ -1,0 +1,15 @@
+{% extends "_pretty.html" %}
+{% block header %}
+<h1>Notepad | Report</h1>
+{% endblock %}
+{% block content %}
+<section style="margin-bottom: 2.5em;">
+    <form action="/report" method="POST">
+        <p>
+            <label for="url">Report Bug</label>
+            <input id="url" type="url" name="url" placeholder="https://example.com" required>
+        </p>
+        <button class="button primary">Report</button>
+    </form>
+</section>
+{% endblock %}

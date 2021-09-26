@@ -1,0 +1,19 @@
+version: "0.1"
+id: leaking-like-a-sieve
+name: Leaking like a sieve
+category: pwn
+description: |
+  This program I developed will greet you, but my friend said it is leaking data like a sieve, what did I forget to add?
+  
+  Author: xXl33t_h@x0rXx
+
+connection_info: nc ${host} ${port}
+
+tags:
+  - beginner
+
+files:
+  - ./challenge/hellothere
+
+flags:
+  - DUCTF{f0rm4t_5p3c1f13r_m3dsg!}

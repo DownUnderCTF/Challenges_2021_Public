@@ -1,0 +1,20 @@
+version: "0.1"
+id: oversight
+name: Oversight
+category: pwn
+description: |
+  One tiny mistake and it's all over
+
+  Author: B3NNY
+
+connection_info: nc ${host} ${port}
+
+files:
+  - ./challenge/oversight
+  - ./challenge/libc-2.27.so
+
+tags:
+  - medium
+
+flags:
+  - DUCTF{1_sm@LL_0ver5ight=0v3rFLOW}

@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  redis:
+    image: redis
+    volumes:
+      - ./init.rdb:/data/dump.rdb
+
+  challenge:
+    image: ctf.local/web/secret_bin
+    build: .
+    ports:
+      - 1337:1337
+    read_only: true
+    environment:
+      REDIS_HOST: redis

@@ -1,0 +1,17 @@
+version: "0.1"
+id: hipster
+name: Retro!
+category: forensics
+description: |
+  "Our original logo was created in paint, I wonder what other secrets it hides?"
+
+  Author: QUTWH
+
+flags:
+  - DUCTF{sicc_paint_skillz!}
+
+tags:
+  - beginner
+
+files:
+  - ./challenge/og.jpg

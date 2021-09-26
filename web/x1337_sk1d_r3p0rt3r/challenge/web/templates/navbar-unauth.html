@@ -1,0 +1,5 @@
+<nav class="nav nav-masthead">
+	<a class="nav-link{% if title == 'Home' %} active" aria-current="page"{% else %}"{% endif %} href="{{ url_for('_index') }}">Home</a>
+	<a class="nav-link{% if title == 'Login' %} active" aria-current="page"{% else %}"{% endif %} href="{{ url_for('_login') }}">Login</a>
+	<a class="nav-link{% if title == 'Register' %} active" aria-current="page"{% else %}"{% endif %} href="{{ url_for('_register') }}">Register</a>
+</nav>

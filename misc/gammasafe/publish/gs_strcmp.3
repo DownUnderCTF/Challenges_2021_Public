@@ -1,0 +1,19 @@
+.TH GS_STRCMP 3  "" "" "GammaSafe Library Manual"
+.SH NAME
+GS_strcmp \- safely compare two strings
+.SH SYNOPSIS
+.nf 
+.B #include <gs_string.h>
+.PP
+.BI "int GS_strcmp(const GS_STR " s1 ", const GS_STR " s2 );
+.fi
+.SH DESCRIPTION
+The
+.BR GS_strcmp ()
+is functionally equivalent to strcmp, comparing the two strings
+.I s1
+and
+.IR s2
+character by character.
+.PP
+The function is considerably slower than the normal strcmp as it has to verify and correct each individual character before comparison, for resilience against soft errors.

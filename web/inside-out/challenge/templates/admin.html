@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Admin Panel{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <p>Lmao did they actually think we're not recording their requests 😂</p>
+    <hr>
+    <div>
+      {% for log in logs %}
+        <p>{{log}}</p>
+      {% endfor %}
+      <p>{{ FLAG }}</p>
+    </div>
+    <hr>
+    <i>Yes the IPs are not real</i>
+{% endblock %}

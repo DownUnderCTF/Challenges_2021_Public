@@ -1,0 +1,14 @@
+version: "0.1"
+id: discord
+name: Discord
+category: misc
+description: |
+  How about you visit our help page? You know what they say when you need 'help' discord is there for support :)
+
+  Author: Crem
+
+tags:
+  - socials
+
+flags:
+  - DUCTF{if_you_are_having_challenge_issues_come_here_pls}

@@ -1,0 +1,5 @@
+data/
+solve/
+venv/
+__pycache__/
+flag.txt

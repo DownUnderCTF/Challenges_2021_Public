@@ -1,0 +1,24 @@
+version: "0.1"
+id: eyespy
+name: eyespy
+category: OSINT
+description: |
+  With the phone number you found, we were able to see their phone pinging off a cell tower. We intercepted their call and need to track down the registration number of the plane that their accomplice left on and and where the flight was heading. We recorded their call and were given the following transcript, can you analyse it for us?
+
+  Flag format: `DUCTF{plane-registration-number_flight destination}`
+
+  Author: xXl33t_h@x0rXx
+
+
+tags:
+  - medium
+
+files:
+  - ./challenge/transcript19092021.pdf
+
+flags:
+  - {
+        type: "static",
+        content: "DUCTF{VH-YIB_melbourne}",
+        data: "case_insensitive",
+    }

@@ -1,0 +1,19 @@
+version: "0.1"
+id: fsm
+name: Flying Spaghetti Monster
+category: misc
+description: |
+  A glorious tangle came toward me and in it I saw my path unfolding, traced by a single noodly appendage, winding with linear purpose though his corporeal form. Beautiful visions composed of primary colours led me forward, and eventually I reached the end without knowing precisely how I had arrived.
+
+  Author: hypersphere (Cybears)
+
+connection_info: nc ${host} ${port}
+
+tags:
+  - hard
+
+files:
+  - ./challenge/fsm.txt
+
+flags:
+  - DUCTF{fsms-m4k3-m3-smfh-fsmsfsmsfsmsfsmsfsm}

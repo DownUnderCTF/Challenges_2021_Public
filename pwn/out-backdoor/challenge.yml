@@ -1,0 +1,19 @@
+version: "0.1"
+id: outbackdoor
+name: outBackdoor
+category: pwn
+description: |
+  Fool me once, shame on you. Fool me twice, shame on me.
+
+  Author: xXl33t_h@x0rXx
+
+connection_info: nc ${host} ${port}
+
+tags:
+  - easy
+
+files:
+  - ./challenge/outBackdoor
+
+flags:
+  - DUCTF{https://www.youtube.com/watch?v=XfR9iY5y94s}

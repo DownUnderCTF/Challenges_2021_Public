@@ -1,0 +1,29 @@
+version: "0.1"
+id: monorail
+name: Do the loop!
+category: forensics
+description: |
+  "Do the loop doop doop..."
+  
+  Flag format: The STRING you end up with after solving challenge, case insensitive.
+
+  Author: QUTWH
+
+flags:
+  - {
+      type: "static",
+      content: "ICOULDLISTENTOTHISONLOOPALLDAY",
+      data: "case_insensitive",
+  }
+
+  - {
+      type: "static",
+      content: "I COULD LISTEN TO THIS ON LOOP ALL DAY",
+      data: "case_insensitive",
+  }
+
+tags:
+  - easy
+
+files:
+  - ./challenge/monorail.wav

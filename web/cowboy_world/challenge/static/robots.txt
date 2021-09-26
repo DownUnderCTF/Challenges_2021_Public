@@ -1,0 +1,4 @@
+# pls no look
+
+User-Agent: regular_cowboys
+Disallow: /sad.eml

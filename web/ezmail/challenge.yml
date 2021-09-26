@@ -1,0 +1,20 @@
+version: "0.1"
+id: ezmail
+name: Ezmail 
+category: web
+description: |
+  Whilst performing a security assessment for a company, you notice they have a innocuous service called ezmail which allows
+  employees to leave messages for each other. You reckon you can use this service to get the `userPassword` of the `admin`
+  account for the whole organization.
+
+  **Flag format:** `DUCTF{[a-z0-9_]+}` case sensitive
+
+  Author: todo#7331
+
+connection_info: ${url}
+
+tags:
+  - medium
+
+flags:
+  - DUCTF{th4t_w4snt_sqli_22a81af2}

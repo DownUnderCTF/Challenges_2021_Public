@@ -1,0 +1,28 @@
+version: "0.1"
+id: zap
+name: Zap
+category: web
+description: |
+  I recently built a small zip application as a service and I was wondering if you could pen-test it for me.
+
+  It's still in beta and a bit unstable at the moment so don't feel afraid to restart the machine!
+
+  Admin Note: We're trying out a new challenge type this year. When you click the "Fetch Instance" button below, a unique URL to your challenge instance will be created. Do not share this link to people outside your team. In order to reset the state, you can terminate the instance and re-create it.
+
+  Author: todo#7331
+
+
+tags:
+  - medium
+
+files:
+  - ./src/app.js
+  - ./package.json
+  - ./yarn.lock
+
+flags:
+  - DUCTF{th4nk_y0u_4_p4rticipating_1n_our_bet4_t3st}
+
+type: kubectf
+extra:
+  template_name: web-zap

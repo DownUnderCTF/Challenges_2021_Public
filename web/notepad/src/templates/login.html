@@ -1,0 +1,20 @@
+{% extends "_pretty.html" %}
+{% block header %}
+<h1>Notepad | Login</h1>
+{% endblock %}
+{% block content %}
+<section style="margin-bottom: 2.5em;">
+    <p class="text-error">{{ err }}</p>
+    <form action="/login" method="POST">
+        <p>
+            <label for="username">Username</label>
+            <input id="username" type="text" name="username" placeholder="foobar" required>
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" placeholder="hunter2" required>
+        </p>
+        <button class="button primary">Login</button>
+    </form>
+</section>
+{% endblock %}

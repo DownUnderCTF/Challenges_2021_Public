@@ -1,0 +1,21 @@
+version: "0.1"
+id: canary
+name: Canary
+category: misc
+description: >
+  Can you sneak the secret CTF code past the canary hidden in the challenge mine?
+
+
+  Author: 247CTF.com
+
+connection_info: nc ${host} ${port}
+
+tags:
+  - medium
+
+files:
+  - ./publish/canary
+  - ./publish/canary.c
+
+flags:
+  - DUCTF{chirp_charp_chorp_churp}

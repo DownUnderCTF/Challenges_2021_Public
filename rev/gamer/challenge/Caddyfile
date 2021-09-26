@@ -1,0 +1,4 @@
+:1337 {
+    root * /www
+    file_server
+}

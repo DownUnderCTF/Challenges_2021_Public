@@ -1,0 +1,50 @@
+{% extends 'head.html' %}
+{% block body %}
+{% autoescape false %}
+<div class="container">
+    <hr>
+    <div class="container">
+      {% if auth == True %}
+      <p>Welcome to your profile {{ user_data.username }}</p>
+      <form method="POST" action="">
+        <div class="form-group">
+          <label class="col-sm-2 form-label">Username:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="username" value="{{ user_data.username }}">
+          </div>
+          <label for="aboutme" class="col-sm-2 form-label">About me</label>
+          <div class="col-sm-10">
+            <input type="text" name="aboutme" class="form-control" id="aboutme" value="{% if user_data.aboutme %}{{ user_data.aboutme }}{% else %}" placeholder="Add some information about yourself"{% endif %}">
+          </div>
+        </div>
+          <div class="form-group">
+            <div class="col-sm-10">
+              <button type="submit" class="btn btn-primary" id="submit">Update information</button>
+            </div>
+          </div>    
+    </form>
+    <div class="form-group">
+      <div class="col-sm-10">
+        <button class="btn btn-info report">Report Error</button>
+        <p><small>Report a problem on this page and an admin will check out the page for any problems</small></p>
+        </div>
+      </div>
+    <script>
+      url = "/api/v1/report"
+        $("button.report").click( function () {
+          $.get(url, function(data, status){
+            alert("Report was succesfully made.");
+          })
+        });
+    </script>
+    {% elif admin == True %}
+      <h1>{{ user_data.username }}</h1>
+      <p>About me: </p>
+      <p>{{ user_data.aboutme }}</p>
+    {% else %}
+    <h1>Unauthorized to view this profile</h1>
+      {% endif %}
+    </div>
+</div>
+{% endautoescape %}
+{% endblock body %}

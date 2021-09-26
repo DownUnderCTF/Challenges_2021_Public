@@ -1,0 +1,60 @@
+version: "0.1"
+id: back-on-the-rails
+name: (back) On the rails
+category: OSINT
+description: |
+  We intercepted further communications between the two. This text was sent shortly before we lost track of one of the suspects, with an image attached. Can you work out what they're talking about? 
+
+  *Okay, please promise not to judge me, but I might have ended up catching the wrong train again. Though I think I'm still in Australia this time (at least it isn't like that time in Norway LOL). I managed to snap a picture before we went past this station… you have any ideas where I might be?*
+
+  Please tell us the name of the station, with any spaces replaced by underscores.
+
+  Author: xXl33t_h@x0rXx
+
+tags:
+  - easy
+
+files:
+  - ./challenge/image.png
+
+flags:
+  - {
+      type: "static",
+      content: "DUCTF{general_motors_train_station}",
+      data: "case_insensitive",
+  }
+  - {
+      type: "static",
+      content: "DUCTF{general_motors}",
+      data: "case_insensitive",
+  }
+  - {
+      type: "static",
+      content: "DUCTF{general_motors_railway_station}",
+      data: "case_insensitive",
+  }
+  - {
+      type: "static",
+      content: "DUCTF{general_motors_station}",
+      data: "case_insensitive",
+  }
+  - {
+      type: "static",
+      content: "general_motors_train_station",
+      data: "case_insensitive",
+  }
+  - {
+      type: "static",
+      content: "general_motors",
+      data: "case_insensitive",
+  }
+  - {
+      type: "static",
+      content: "general_motors_railway_station",
+      data: "case_insensitive",
+  }
+  - {
+      type: "static",
+      content: "general_motors_station",
+      data: "case_insensitive",
+  }

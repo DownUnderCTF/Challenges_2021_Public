@@ -1,0 +1,36 @@
+version: "0.1"
+id: the-file-is-lava
+name: The File is Lava
+category: forensics
+description: |
+  Acme Inc. has found that its internal files have been leaked to several successful phishing attacks.
+
+  A new shared workstation recently had company files copied onto the disk for use in the office and needs to be analysed.
+
+  DFIR specialists have found no evidence on other machines and need your help to investigate this workstation.
+
+  Since COVID-19 has closed the office, find the forensic image here - https://mirror.aarnet.edu.au/pub/DownUnderCTF/
+
+  ---
+
+  To give everyone a chance to download the files, the image is encrypted and the password will be released with the second challenge drop .
+
+  The PIN code for the windows machine is `2021`.
+
+  To decrypt the file, use any bash emulator with gpg installed and use the following command:
+
+  ```
+  gpg --output lava.ova --decrypt The_file_is_lava.ova.gpg
+  ```
+  
+  Note: after the command is executed, you will be prompted with the passphrase that will be released later.
+
+  It is recommended that you use virtual box to import this machine after it has been decrypted.
+
+  Author: TheDon*#2152
+
+tags:
+  - medium
+
+flags:
+  - DUCTF{y0u_f0und_th3_m1ss1ng_l1nk}

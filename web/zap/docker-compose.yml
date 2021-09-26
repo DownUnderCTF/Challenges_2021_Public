@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  zap:
+    build: .
+    image: zap.web.ctf.local
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8000:8000

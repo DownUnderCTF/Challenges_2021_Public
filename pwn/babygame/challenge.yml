@@ -1,0 +1,20 @@
+version: "0.1"
+id: babygame
+name: babygame
+category: pwn
+description: >
+  Not your typical shell game...
+
+
+  Author: grub
+
+connection_info: nc ${host} ${port}
+
+files:
+  - ./challenge/babygame
+
+tags:
+  - easy
+
+flags:
+  - DUCTF{whats_in_a_name?_5aacfc58}

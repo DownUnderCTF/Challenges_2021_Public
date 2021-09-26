@@ -1,0 +1,10 @@
+# vi: ft=dockerfile
+FROM python:3
+
+COPY requirements.txt requirements-solve.txt /tmp/
+RUN python3 -m pip install -r /tmp/requirements-solve.txt
+
+COPY fsm.py solve.py /noob/
+RUN chmod ugo+x /noob.py
+
+WORKDIR /noob

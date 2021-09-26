@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>DownUnderCTF 2021 | gamer</title>
+    <link rel="stylesheet" href="../challenge/TemplateData/style.css">
+  </head>
+  <body>
+    <div style="position: absolute; top: 40px; left: 50%; transform: translateX(-50%);">
+      Use arrow keys to move. Collect all four coins then find the flag!
+    </div>
+    <div style="margin-top: 100px; margin-left: 60px">
+      <div>
+        <label for="update_health">update health:</label><br>
+        <input type="number" id="update_health" name="update_health" value="100">
+        <button id="update_health_go">go</button>
+      </div>
+
+      <div style="margin-top: 50px">
+        press z to fly
+      </div>
+
+      <div style="margin-top: 50px">
+        <label for="update_speed">update speed:</label><br>
+        <input type="number" id="update_speed" name="update_speed" value="500">
+        <button id="update_speed_go">go</button>
+      </div>
+    </div>
+    <div id="unity-container" class="unity-desktop" style="margin-left: 10%">
+      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+    </div>
+    <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);">Sprites credit: <a href="https://www.kenney.nl/">https://www.kenney.nl/</a></div>
+    <script>
+      var buildUrl = "../challenge/Build";
+      var loaderUrl = buildUrl + "/game.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/game.data",
+        frameworkUrl: buildUrl + "/game.framework.js",
+        codeUrl: buildUrl + "/game.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DownUnderCTF",
+        productName: "DownUnderCTF",
+        productVersion: "1.0",
+      };
+
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+
+      loadingBar.style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+        }).then((unityInstance) => {
+          window.unityInstance = unityInstance
+          loadingBar.style.display = "none";
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+
+    </script>
+    <script>
+      var update_health_button = document.getElementById("update_health_go")
+      update_health_button.onclick = () => {
+        var upd_amount = parseInt(document.getElementById("update_health").value)
+        window.unityInstance.SendMessage('Player', 'UpdateHealth', upd_amount)
+      }
+
+      document.onkeypress = (e) => {
+        if(e.keyCode == 122) {
+          window.unityInstance.SendMessage('Player', 'BoosterJump', 12)
+        }
+      }
+
+      var original_perf_now = performance.now
+      var real_start_time = performance.now()
+      
+      var speedhack_perf_now = (speed_multiplier) => {
+        return () => {
+          var real_time = original_perf_now.call(performance)
+          var fake_elapsed = (real_time - real_start_time) * speed_multiplier
+          return real_start_time + fake_elapsed
+        }
+      }
+
+      var update_speed_button = document.getElementById("update_speed_go")
+      update_speed_button.onclick = () => {
+        var upd_amount = parseFloat(document.getElementById("update_speed").value)
+        performance.now = speedhack_perf_now(upd_amount)
+      }
+    </script>
+  </body>
+</html>

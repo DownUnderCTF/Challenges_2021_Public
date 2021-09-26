@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="card text-white bg-dark" style="width: 28rem;">
+		<div class="card-body">
+			<h1 class="card-title">Register</h1>
+			<form action="{{ url_for('_register') }}" method="post" novalidate>
+				{{ form.hidden_tag() }}
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text">{{ form.username.label }}</span>
+					</div>
+
+					{{ form.username(size=32, class="form-control") }}
+				</div>
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text">{{ form.password.label }}</span>
+					</div>
+					{{ form.password(size=32, class="form-control") }}
+				</div>
+				<p>{{ form.submit(class="btn btn-success") }}</p>
+			</form>
+		</div>
+	</div>
+{% endblock %}

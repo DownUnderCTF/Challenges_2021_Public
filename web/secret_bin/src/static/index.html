@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Secrets Bin | Home</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="data:,">
+
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+</head>
+
+<body style="width: 100vw; padding: 3em;">
+    <nav class="nav">
+        <div class="nav-left">
+            <a class="brand">Secrets Bin</a>
+            <div class="tabs">
+                <a class="active" href="/">Home</a>
+                <a href="secrets.html">Secrets</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container is-center" style="padding: 2em; margin-top: 2em">
+        <section>
+            <h1>Secrets Bin</h1>
+            <p>Secrets Bin is a brand new secret storage and sharing website.</p>
+            <p>We utilize advanced <a href="https://en.wikipedia.org/wiki/Ostrich_algorithm">algorithms</a>
+                to ensure your secrets are stored safely and securely. Your secrets are also never associated with you,
+                so even if a hacker steals your secrets, they won't know where to use them!</p>
+            <p>We've currently stored <span id="secret-count">over 10</span> for secrets our users and counting.</p>
+            <a href="secrets.html" class="button primary">Get Started!</a>
+        </section>
+    </main>
+
+    <script>
+        (function() {
+            const secretCount = document.querySelector('#secret-count');
+            const getCountStoredSecrets = () => fetch(`/api/stats`).then(r => r.json()).then(j => {
+                secretCount.textContent = j.stats.total_secret_count;
+            });
+
+            setInterval(getCountStoredSecrets, 10000);
+            getCountStoredSecrets();
+        })()
+    </script>
+</body>
+
+</html>

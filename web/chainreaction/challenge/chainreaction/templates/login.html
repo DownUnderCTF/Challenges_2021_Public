@@ -1,0 +1,29 @@
+
+{% extends 'head.html' %}
+{% block body %}
+<div class="container">
+  <div class="jumbotron text-center">
+    <h1>Login</h1>
+  </div>
+    <form method="POST" action="/login">
+        <div class="form-group">
+          <label for="username" class="col-sm-2 col-form-label">Username</label>
+          <div class="col-sm-10">
+            <input type="text" name="username" class="form-control" id="username">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" name="password" class="form-control" id="password" >
+          </div>
+          <br>
+          <div class="form-group">
+            <div class="col-sm-10">
+              <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
+              <p><small>For developers sign in and go to the portal <a href="/dev">this</a></small></p>
+            </div>
+          </div>  
+    </form>
+</div>
+{% endblock body %}

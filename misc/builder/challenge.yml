@@ -1,0 +1,17 @@
+version: "0.1"
+id: builder
+name: Builder
+category: misc
+description: |
+  In order to build your skills you need to start from a solid foundation. And the best foundations are built from bricks.
+
+  Author: BearArms (Cybears)
+
+tags:
+  - beginner
+
+files:
+  - ./challenge/builder.mpd
+
+flags:
+  - DUCTF{CaD4L3G0!}

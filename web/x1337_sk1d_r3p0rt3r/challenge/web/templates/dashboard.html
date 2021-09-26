@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row d-flex justify-content-center">
+	<div class="col-5 mr-2">
+		<div class="card text-white bg-dark">
+			<div class="card-body">
+				<h4 class="card-title">Report a Sk1d</h4>
+				<hr/>
+				<form action="{{ url_for('_report') }}" method="post" novalidate>
+					{{ reportform.hidden_tag() }}
+					<div class="input-group mb-3">
+						{{ reportform.message(class="form-control", placeholder="Sk1dd13 D3t41lz") }}
+					</div>
+					<div class="input-group justify-content-center mb-3">
+						{{ reportform.submit(class="btn btn-success") }}
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="col-5">
+		<div class="card text-white bg-dark">
+			<div class="card-body">
+				<h4 class="card-title">Edit Profile</h4>
+				<hr>
+				<form action="{{ url_for('_edit') }}" method="post" novalidate>
+					{{ editform.hidden_tag() }}
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">{{ editform.username.label }}</span>
+						</div>
+						{{ editform.username(size=32, class="form-control", value=current_user.get_username() ) }}
+					</div>
+					<div class="input-group justify-content-center mb-3">
+						{{ editform.submit(class="btn btn-success") }}
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row d-flex justify-content-center w-100 mt-3">
+	<div class="col-12">
+		<div class="card w-100 text-white bg-dark">
+			<div class="card-body" style="max-height: 25%">
+				<h4 class="card-title">Request a Sk1d R3p0rtz</h4>
+				{% if current_user.reports %}
+				<div class="list-group">
+					{% for report in current_user.reports[::-1] %}
+						<a href="{{ url_for('_view_report', id=report.id) }}" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-white">{{ report.username }}> <span class="text-muted">{% if report.message|length > 50 %}{{ report.message[:50] }}...{% else %}{{ report.message }}{% endif %}</span></a>
+					{% endfor %}
+				</div>
+				{% else %}
+				<p class="text-muted">Report a Skid to get started >:)</p>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

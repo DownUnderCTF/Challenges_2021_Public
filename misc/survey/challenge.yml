@@ -1,0 +1,16 @@
+version: "0.1"
+id: survey
+name: Survey
+category: survey
+description: |
+  Tell us what you loved and hated about DUCTF 2021. Every bit of feedback helps, so please take the time to fill out the form as honestly and as accurately as you can!
+
+  [**Link to survey**](https://docs.google.com/forms/d/e/1FAIpQLScrDYkiCSw9eO51HaFaTTXZodtkMzn9TE_Wi9JgEj1kklNJsA/viewform)
+
+  Author: DUCTF
+
+flags:
+  - DUCTF{th4nk_y0u_f0r_pl4ying_DUCTF_2021_!!}
+
+type: standard
+value: 10

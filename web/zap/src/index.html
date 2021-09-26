@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+  </head>
+
+  <body>
+    <main class="hero is-fullheight is-info is-bold">
+      <div class="hero-body">
+        <div class="container columns" style="justify-content: space-around">
+          <div class="column" style="padding-right: 4em; text-align: right">
+            <h1 class="title main-title">Zap</h1>
+            <div class="subtitle">
+              <p>Zip your files online for free!</p>
+            </div>
+          </div>
+          <div class="column">
+            <form action="/zip" method="POST" enctype="multipart/form-data">
+              <div class="block">
+                <div class="file has-name is-fullwidth">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="file" />
+                    <span class="file-cta"> Choose a file </span>
+                    <span class="file-name"> No file selected </span>
+                  </label>
+                </div>
+              </div>
+              <div class="block columns">
+                <div class="column">
+                  <input
+                    class="input"
+                    type="password"
+                    name="password"
+                    placeholder="Password (optional)"
+                  />
+                </div>
+                <div class="column is-3">
+                  <div class="select is-fullwidth">
+                    <select type="compressionMethod">
+                      <option value="deflate" selected>deflate</option>
+                      <option value="store">store</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="column is-narrow">
+                  <button class="button">Go!</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      (function () {
+        const file = document.querySelector("input[type=file]");
+        function setFileValue() {
+          if (file.files.length > 0) {
+            file.parentElement.querySelector(".file-name").textContent =
+              file.files[0].name;
+          }
+        }
+        setFileValue();
+        file.addEventListener("change", function () {
+          setFileValue();
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+version: "0.1"
+id: jwt
+name: JWT
+category: web
+description: >
+  Everyone knows you can offline brute force HS256. Is RS256 vulnerable too?
+
+
+  Author: 247CTF.com
+
+connection_info: ${url}
+
+tags:
+  - medium
+  - crypto
+
+flags:
+  - DUCTF{json_web_trickeryyy}
