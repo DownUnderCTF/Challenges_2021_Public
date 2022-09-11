@@ -4,7 +4,7 @@
 
 **Difficulty:** easy
 
-**Author:** QUT_WH
+**Author:** Yo_Yo_Bro
 
 Our original logo was created in paint, I wonder what other secrets it hides?
 
