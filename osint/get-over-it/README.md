@@ -4,7 +4,7 @@
 
 **Difficulty:** easy
 
-**Author:** QUT_WH
+**Author:** Yo_Yo_Bro
 
   "Bridget loves bridges, this one is her favourite."
   What is the name of it and whats the length of its main span to the nearest metre.
