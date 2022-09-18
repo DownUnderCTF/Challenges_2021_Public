@@ -3,7 +3,7 @@
 
 **Difficulty:** easy
 
-**Author:** QUT_WH
+**Author:** Yo_Yo_Bro
 
 Do the loop doop doop...
 
