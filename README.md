@@ -24,8 +24,8 @@
 # forensics
 |                          Challenge                          |     Author     | Difficulty | Release Round |
 | ----------------------------------------------------------- | -------------- | ---------- | ------------- |
-| [Retro!](./forensics/retro)                                 | QUTWH          | beginner   | round 1       |
-| [Do the loop!](./forensics/do_the_loop)                     | QUTWH          | easy       | round 1       |
+| [Retro!](./forensics/retro)                                 | Yo_Yo_Bro      | beginner   | round 1       |
+| [Do the loop!](./forensics/do_the_loop)                     | Yo_Yo_Bro      | easy       | round 1       |
 | [How to pronounce GIF](./forensics/how-to-pronounce-gif)    | xXl33t_h@x0rXx | easy       | round 1       |
 | [That's Not My Name](./forensics/Thats_Not_My_Name)         | Conletz#5420   | easy       | round 1       |
 | [The File is Lava](./forensics/The_File_Is_Lava)            | TheDon*#2152   | medium     | round 2       |
@@ -56,7 +56,7 @@
 | ------------------------------------------------------------------------ | -------------- | ---------- | ------------- |
 | [Who goes there?](./osint/Who-goes-there)                                | xXl33t_h@x0rXx | beginner   | round 1       |
 | [(back) On the rails](./osint/(back)-On-the-rails)                       | xXl33t_h@x0rXx | easy       | round 2       |
-| [Get over it!](./osint/get-over-it)                                      | QUTWH          | easy       | round 1       |
+| [Get over it!](./osint/get-over-it)                                      | Yo_Yo_Bro      | easy       | round 1       |
 | [The Internet is Written in Ink](./osint/the_internet_is_written_in_ink) | Crem           | easy       | round 1       |
 | [Apartment Views](./osint/Apartment-views)                               | xXl33t_h@x0rXx | medium     | round 2       |
 | [eyespy](./osint/eyespy)                                                 | xXl33t_h@x0rXx | medium     | round 2       |
